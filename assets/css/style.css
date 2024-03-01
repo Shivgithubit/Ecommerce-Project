@@ -209,8 +209,8 @@ input {
   outline: 0;
 }
 .header-logo img{
-  height: 100px;
-  width: 200px;
+  height: 126px;
+  width: 169px;
 }
 
 .img-responsive {
@@ -630,6 +630,7 @@ header .header-top .top-nav ul li a i {
 }
 header .header-bottom {
   padding: 30px 0;
+  background: linear-gradient(46deg, #b342d2, #0c094c);
 }
 @media only screen and (min-width: 768px) and (max-width: 991px), only screen and (max-width: 767px) {
   header .header-bottom {
@@ -1567,7 +1568,7 @@ body.offcanvas-open {
 }
 
 .bg-color1 {
-  background-color: #165dba;
+  background-color: #9170dc;
 }
 
 .bg-color2 {
@@ -1730,6 +1731,7 @@ body.offcanvas-open {
           animation-name: fadeInUp;
   -webkit-animation-delay: 1s;
           animation-delay: 1s;
+          margin-bottom: 165px;
 }
 
 .hero-slide-content {
@@ -1757,7 +1759,7 @@ body.offcanvas-open {
   }
 }
 .hero-slide-content .title-1 {
-  font-size: 60px;
+  font-size: 50px;
   font-weight: 600;
   margin-bottom: 50px;
   color: #fff;
@@ -2192,8 +2194,8 @@ body.offcanvas-open {
 }
 .product-tab-nav .nav-item .nav-link:hover, .product-tab-nav .nav-item .nav-link.active {
   color: #fff;
-  background-color: #266bf9;
-  border-color: #266bf9;
+  background-color: #f58013;
+  border-color:#f58013
 }
 
 @media only screen and (max-width: 767px) {
@@ -2421,7 +2423,7 @@ body.offcanvas-open {
   max-width: 100%;
   -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
-  width: 100%;
+  width: -7%;
 }
 .product .thumb .image img.hover-image {
   position: absolute;
@@ -2516,7 +2518,8 @@ body.offcanvas-open {
 .product:hover {
   -webkit-transform: scaleY(1.05);
           transform: scaleY(1.05);
-  z-index: 1;
+          box-shadow: 0px 0px 10px 3px grey;
+          z-index: 1;
 }
 .product:hover .badges {
   z-index: 111;
@@ -2564,9 +2567,12 @@ body.offcanvas-open {
 }
 .style-one .single-banner img {
   max-width: 100%;
-  width: 100%;
+  width: 64%;
   -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
+}
+.iphoneimg img{
+  width: 89%;
 }
 .style-one .single-banner .banner-content {
   position: absolute;
@@ -4876,7 +4882,7 @@ body.offcanvas-open {
   font-weight: 400;
 }
 .trstimonial-area {
-  background-color: #f2f8fd;
+  background-color: #a6abb0;
   padding-bottom: 80px;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -5647,7 +5653,11 @@ body.offcanvas-open {
 }
 .footer-area .footer-top {
   padding: 100px 0 100px 0;
-  background: #266bf9;
+  background:#9170dc;
+}
+.footer-logo a img{
+  height: 145px;
+  width: 200px;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .footer-area .footer-top {
