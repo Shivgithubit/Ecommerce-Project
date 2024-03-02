@@ -5949,12 +5949,14 @@ body.offcanvas-open {
     margin-top: 60px;
     border: 2px solid red;
   }
-  .visionimg{
-    display: flex;
-    border: 2px solid black;
-    justify-content: space-around;
-    flex-direction: row;
-  }
+ 
+}
+.visionimg{
+  display: flex;
+  border: 2px solid black;
+  justify-content: space-around;
+  height: 400px;
+  align-items: center;
 }
 .visionimg ul{
   border: 2px solid green ;
@@ -5963,6 +5965,7 @@ body.offcanvas-open {
 }
 .promo-video img {
   max-width: 100%;
+
   border-radius: 25px;
 }
 .promo-video .overlay-box {
