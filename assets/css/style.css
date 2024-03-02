@@ -168,6 +168,7 @@ p {
 }
 p:last-child {
   margin-bottom: 0;
+  text-align: left;
 }
 
 ol,
@@ -694,7 +695,7 @@ header .header-bottom .header-actions .header-action-btn .header-action-num {
           align-items: center;
   color: #fff;
   border-radius: 50%;
-  background-color:#f58013
+  background-color:#f58013;
   width: 21px;
   height: 21px;
 }
@@ -903,7 +904,7 @@ header .main-menu ul li .mega-menu li ul li.title a {
   height: auto;
 }
 header .main-menu ul li .mega-menu li ul li.title a:hover {
-  color:#f58013
+  color:#f58013;
   padding-left: 0px;
 }
 header .main-menu ul li .mega-menu li ul li a {
@@ -919,7 +920,7 @@ header .main-menu ul li .mega-menu li ul li a {
   margin-bottom: 15px;
 }
 header .main-menu ul li .mega-menu li ul li a:hover {
-  color:#f58013
+  color:#f58013;
   padding-left: 10px;
 }
 header .main-menu ul li .mega-menu li ul li:last-child a {
@@ -998,7 +999,7 @@ header .main-menu ul li .mega-menu li ul li:last-child a {
           justify-content: center;
   width: 60px;
   height: 100%;
-  background:#f58013
+  background:#f58013;
   color: #FFF;
   font-size: 20px;
   border-radius: 0px 5px 5px 0px;
@@ -1192,7 +1193,7 @@ body.offcanvas-open {
   display: inline-block;
   vertical-align: middle;
   color: #fff;
-  background:#f58013
+  background:#f58013;
   font-size: 16px;
   padding: 0;
   line-height: 40px;
@@ -1235,11 +1236,11 @@ body.offcanvas-open {
   height: auto;
 }
 .offcanvas .inner .foot .buttons a:hover {
-  background-color:#f58013
+  background-color:#f58013;
   color: #fff;
 }
 .offcanvas .inner .foot .buttons .current-btn {
-  background-color:#f58013
+  background-color:#f58013;
   color: #fff;
 }
 .offcanvas .inner .foot .sub-total {
@@ -1319,7 +1320,7 @@ body.offcanvas-open {
   border: 0;
   left: 0%;
   top: 5px;
-  background-color:#f58013
+  background-color:#f58013;
   -webkit-animation-delay: 0.5s;
           animation-delay: 0.5s;
   border-radius: 50%;
@@ -1468,7 +1469,7 @@ body.offcanvas-open {
   font-weight: 500;
 }
 .minicart-product-list li .content .title:hover {
-  color:#f58013
+  color:#f58013;
 }
 .minicart-product-list li .content .quantity-price {
   font-size: 14px;
@@ -1476,7 +1477,7 @@ body.offcanvas-open {
   margin-top: 10px;
 }
 .minicart-product-list li .content .quantity-price .amount {
-  color:#f58013
+  color:#f58013;
   font-weight: 500;
   font-size: 18px;
 }
@@ -1549,7 +1550,7 @@ body.offcanvas-open {
 .user-panel ul li a i {
   margin-right: 15px;
   font-size: 18px;
-  color:#f58013
+  color:#f58013;
   width: 20px;
   height: 20px;
   display: -webkit-box;
@@ -1827,7 +1828,7 @@ body.offcanvas-open {
 }
 .hero-slide-content.hero-slide-content-2 .price .amount {
   font-size: 48px;
-  color:#f58013
+  color:#f58013;
   display: block;
   margin: 15px 0 60px;
 }
@@ -1961,7 +1962,7 @@ body.offcanvas-open {
 }
 .btn-primary:hover {
   color: #fff;
-  background:#f58013
+  background:#f58013;
   -webkit-transform: translateY(-1px);
           transform: translateY(-1px);
   border-color:#f58013
@@ -1985,7 +1986,7 @@ body.offcanvas-open {
 }
 .btn-primary.blog-btn:hover {
   color: #fff;
-  background:#f58013
+  background:#f58013;
   -webkit-transform: translateY(-1px);
           transform: translateY(-1px);
   border-color:#f58013
@@ -2059,7 +2060,7 @@ body.offcanvas-open {
   bottom: -1px;
   border-radius: 100%;
   z-index: -1;
-  border: 2px dashed#f58013
+  border: 2px dashed#f58013;
   opacity: 0;
   -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
@@ -2262,7 +2263,7 @@ body.offcanvas-open {
 }
 .link-page .nav-link:hover {
   color: #fff;
-  background-color:#f58013
+  background-color:#f58013;
   border-color:#f58013
 }
 
@@ -2680,7 +2681,7 @@ body.offcanvas-open {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color:#f58013
+  background-color:#f58013;
   color: #fff;
   border-radius: 50%;
   position: absolute;
@@ -2856,7 +2857,7 @@ body.offcanvas-open {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color:#f58013
+  background-color:#f58013;
   color: #fff;
   border-radius: 12px;
   position: absolute;
@@ -3023,7 +3024,7 @@ body.offcanvas-open {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color:#f58013
+  background-color:#f58013;
   color: #fff;
   border-radius: 12px;
   position: absolute;
@@ -3193,7 +3194,7 @@ body.offcanvas-open {
   color: #393939;
 }
 .single-blog .blog-athor-date span i {
-  color:#f58013
+  color:#f58013;
   margin-right: 5px;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (max-width: 767px) {
@@ -3242,7 +3243,7 @@ body.offcanvas-open {
   color: #393939;
 }
 .blog-post-content-inner .blog-athor-date span i {
-  color:#f58013
+  color:#f58013;
   margin-right: 5px;
 }
 .blog-post-content-inner .blog-athor-date a {
@@ -3279,7 +3280,7 @@ body.offcanvas-open {
 
 .quate-speech-area {
   padding: 40px 45px;
-  background-color:#f58013
+  background-color:#f58013;
   position: relative;
   margin: 40px 0;
   border-radius: 5px;
@@ -3487,12 +3488,12 @@ body.offcanvas-open {
   font-size: 16px;
   text-align: center;
   background: transparent;
-  color:#f58013
+  color:#f58013;
   padding: 0;
   border: 0;
 }
 .blog-sidebar form button:hover {
-  color:#f58013
+  color:#f58013;
 }
 .blog-sidebar .category-post li a {
   color: #444444;
@@ -3561,7 +3562,7 @@ body.offcanvas-open {
   font-weight: 500;
 }
 .blog-sidebar .recent-post-widget .recent-single-post .media-side span i {
-  color:#f58013
+  color:#f58013;
   margin-right: 5px;
   font-size: 18px;
 }
@@ -3591,7 +3592,7 @@ body.offcanvas-open {
   }
 }
 .blog-sidebar .sidebar-widget-tag ul li a:hover {
-  background-color:#f58013
+  background-color:#f58013;
   color: #fff;
   border-color:#f58013
 }
@@ -3746,7 +3747,7 @@ body.offcanvas-open {
   margin-left: 20px;
 }
 .blog-single-tags-share .social li a {
-  color:#f58013
+  color:#f58013;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3789,7 +3790,7 @@ body.offcanvas-open {
 }
 .blog-nav .nav-img:after {
   content: "";
-  background:#f58013
+  background:#f58013;
   width: 100%;
   height: 100%;
   position: absolute;
@@ -3839,7 +3840,7 @@ body.offcanvas-open {
   font-weight: 500;
 }
 .blog-nav .media-side span i {
-  color:#f58013
+  color:#f58013;
   margin-right: 5px;
   font-size: 18px;
 }
@@ -4474,7 +4475,7 @@ body.offcanvas-open {
 }
 .slider-nav-style-1 .swiper-buttons .swiper-button-next:hover,
 .slider-nav-style-1 .swiper-buttons .swiper-button-prev:hover {
-  background-color:#f58013
+  background-color:#f58013;
   color: #fff;
 }
 
@@ -4489,7 +4490,7 @@ body.offcanvas-open {
 }
 .slider-nav-style-1.small-nav .swiper-buttons .swiper-button-next:hover,
 .slider-nav-style-1.small-nav .swiper-buttons .swiper-button-prev:hover {
-  background-color:#f58013
+  background-color:#f58013;
   color: #fff;
 }
 
@@ -6125,10 +6126,10 @@ body.offcanvas-open {
   -webkit-transform: scale(1.01) rotate(0deg);
           transform: scale(1.01) rotate(0deg);
 }
-.team-wrapper:hover{
-  box-shadow: 0px 0px 19px 0px grey;
+/* .team-wrapper img:hover{
+  box-shadow: 10px 20px 9px 0px grey;
  
-}
+} */
 .team-area .team-wrapper .team-image .team-social {
   -ms-flex-pack: distribute;
       justify-content: space-around;
