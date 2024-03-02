@@ -5865,8 +5865,11 @@ body.offcanvas-open {
 }
 
 .about-area {
-  background-color: #c7a7e1;
-  max-height: 685px;
+ background: url(/assets/images/about/breadcrunb-bg.webp);
+ background-repeat: no-repeat;
+ background-position: center;
+ background-repeat: cover;
+  height: 410px;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .about-area {
@@ -5891,7 +5894,7 @@ body.offcanvas-open {
 
 .about-contant {
   max-width: 890px;
-  margin: auto;
+  margin: -15px;
 }
 .about-contant .title {
   font-size: 60px;
@@ -5953,25 +5956,25 @@ body.offcanvas-open {
 }
 .visionimg{
   display: flex;
-  border: 2px solid black;
+ 
   justify-content: space-around;
   height: 400px;
   align-items: center;
 }
 .visionimg ul{
-  border: 2px solid green ;
   margin-right: 10px;
+  font-size: 20x;
   text-align: left;
 }
 .promo-video img {
-  max-width: 100%;
-
+  max-width: 80%;
   border-radius: 25px;
 }
-.promo-video .overlay-box {
+/* .promo-video .overlay-box {
   width: 80px;
   height: 80px;
   transition: all 0.3s ease;
+
   -moz-transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
   -ms-transition: all 0.3s ease;
@@ -5981,7 +5984,7 @@ body.offcanvas-open {
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-}
+} */
 @media only screen and (max-width: 767px) {
   .promo-video .overlay-box {
     width: 60px;
@@ -6088,7 +6091,7 @@ body.offcanvas-open {
   }
 }
 .team-area {
-  margin-top: 385px;
+  margin-top:  35px;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .team-area {
@@ -6115,11 +6118,16 @@ body.offcanvas-open {
 }
 .team-area .team-wrapper .team-image img {
   max-width: 100%;
+  border-radius: 10px;
   -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
   width: 100%;
   -webkit-transform: scale(1.01) rotate(0deg);
           transform: scale(1.01) rotate(0deg);
+}
+.team-wrapper:hover{
+  box-shadow: 0px 0px 19px 0px grey;
+ 
 }
 .team-area .team-wrapper .team-image .team-social {
   -ms-flex-pack: distribute;
