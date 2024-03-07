@@ -93,6 +93,11 @@
             font-weight: bolder;
             font-size: 20px;
             margin-top: 10px;
+           
+        }
+
+        .click:hover{
+            transform: scale(1.1);
         }
 
         .list-item-1 {
@@ -134,7 +139,7 @@
         }
 
         .list-item-1>li>i {
-            color: blue;
+            color: rgb(16, 16, 59);
             width: auto;
             height: 20px;
             font-size: 20px;
@@ -142,20 +147,19 @@
         }
 
         .list-item-2>li>i {
-            color: blue;
+            color: rgb(16, 16, 59);
             width: auto;
             height: 20px;
             font-size: 20px;
         }
-        .offer-image img{
+
+        .offer-image img {
             height: 150px;
             width: 150px;
             position: absolute;
             bottom: 400px;
             left: 40%;
         }
-    
-     
     </style>
 </head>
 
@@ -164,18 +168,19 @@
         <div class="offer-image">
             <img src="../assets/images/blog-image/offer.png" alt="">
         </div>
-       
+
         <div class="content">
             <h4 class="Apple"><i class="fa-brands fa-apple"></i> Apple</h4>
-            <h1>Buy iPhone 15 Pro<br>just <span style="color:#ff6600; font-size:50px;">Rs 99 </span>/-</h1>
+            <h1>Buy iPhone 15 Pro<br>just <span style="color:rgba(244, 5, 5, 0.988); font-size:50px;">Rs 99 </span>/-
+            </h1>
             <p class="para-content">
                 A16 Bionic powers all kinds of advanced features. Like computational photography used for 24 MP photos
                 and next-gen portraits.
             <div class="icon">
 
                 <ul class="list-item-1">
-                    <li><i class="fa-solid fa-mobile" ></i> D 17.00 cm (6.7″) </li>
-                    <li><i class="fa-solid fa-chalkboard-user"></i> A17 Pro chip
+                    <li><i class="fa-solid fa-mobile"></i> D 17.00 cm (6.7″) </li>
+                    <li class="newicon"><i class="fa-solid fa-chalkboard-user"></i> <span>A17 Pro chip</span>
                     </li>
                     <li><i class="fa-solid fa-camera"></i> Dual Camera</li>
                     <!-- <li><i class="fa-solid fa-camera" style="font-size: 20px;"></i> A17 Pro chip -->
@@ -195,7 +200,7 @@
                 you need exceptional graphics performance. Dynamic Island bubbles up alerts and Live Notifications.
                 Plus, with Always-On display, your Lock Screen stays glanceable, so you don’t have to tap it to stay in
                 the know..</p> -->
-            <button class="click">Register Now</button>
+            <a href="/contact.html"><button class="click">Register Now</button></a>
         </div>
         <div class="image-container">
             <!-- Replace the URL with the actual image URL -->
