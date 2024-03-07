@@ -1762,11 +1762,12 @@ body.offcanvas-open {
   }
 }
 .hero-slide-content .title-1 {
-  font-size: 50px;
+  font-size: 40px;
   font-weight: 600;
   margin-bottom: 50px;
   color: #fff;
-  line-height: 78px;
+  line-height: 65px;
+  font-family: sans-serif;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .hero-slide-content .title-1 {
