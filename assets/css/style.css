@@ -632,7 +632,7 @@ header .header-top .top-nav ul li a i {
 
 header .header-bottom {
   padding: 18px 0;
-  background:#2f1833;
+  background:#525259
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px), only screen and (max-width: 767px) {
@@ -4589,8 +4589,7 @@ body.offcanvas-open {
     - Breadvrumb  
 =================================*/
 .breadcrumb-area {
-  background-image: url();
-  background-color: #8aa7cc;
+ background: url(/assets/images/banner/background1.avif);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -4628,7 +4627,7 @@ body.offcanvas-open {
   font-weight: 400;
   text-transform: capitalize;
   font-size: 60px;
-  color: #000;
+  color:white;
   margin: 0;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -4655,7 +4654,7 @@ body.offcanvas-open {
   }
 }
 .breadcrumb-list li a {
-  color: #000;
+  color:white;
 }
 .breadcrumb-list li a:hover {
   color:#f58013;
@@ -9681,14 +9680,14 @@ Pages - My Account
 }
 
 .contact-form .contact-title {
-  margin: 0 0 52px;
+  margin: 0px 54px 49px ;
   text-align: center;
 }
 .contact-form .contact-title .title {
   font-size: 48px;
   color: #000;
   font-weight: 500;
-  margin: 0;
+  margin: 27px;
   line-height: 1;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -9756,7 +9755,7 @@ Pages - My Account
 .contact-form button {
   font-size: 1px;
   font-weight: 608px;
-  width: 329px;
+  width: 747px;
   height: 64px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -9779,7 +9778,10 @@ Pages - My Account
   text-transform: capitalize;
   margin: 33px;
 }
+button#submit {
+  margin-left: 3px;
 }
+
 .contact-form button:hover {
   background-color: #000;
   color: #fff;
@@ -9824,7 +9826,7 @@ Pages - My Account
   margin: 0 auto;
   padding: 20px;
   position: relative;
-  max-width: 840px;
+  width: 1200px ;
 }
 
 /* Left contact page */
@@ -9836,15 +9838,16 @@ Pages - My Account
 }
 
 .form-control{
-  font-size: 22px;
-  width: 400px;
+  box-shadow: 0px 17px 20px 1px gray;
+  font-size: 18px;
+  width: 746px;
   margin-top: 20px;
-   height: 35px;
+   height: 54px;
    border-radius: 10px;
-  max-width: 500px;
   background-color: white;
   color: #fff;
   letter-spacing: 1px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .send-button {
@@ -9889,7 +9892,7 @@ Pages - My Account
 }
 
 .list-item {
-  line-height: 4;
+  line-height: 3;
   color: black;
 }
 
@@ -9900,7 +9903,7 @@ Pages - My Account
 }
 
 .place {
-  margin-left: 62px;
+  margin-left: 34px;
 }
 
 .phone {
@@ -9915,10 +9918,11 @@ Pages - My Account
   color: black;
   text-decoration: none;
   transition-duration: 0.2s;
+  margin-left: -20px ;
 }
 
 .contact-text a:hover {
-  color: #fff;
+  color: #f58013;
   text-decoration: none;
 }
 
@@ -9964,6 +9968,11 @@ Pages - My Account
   box-shadow: 0 0 0 1px #fff;
   transition: all .2s ease-in-out;
 }
+i.fa.fa-map-marker.icon {
+  font-size: 37px;
+  margin-left: 2px ;
+}
+ 
 
 .social-media-list li:hover {
   background-color: #fff; 
