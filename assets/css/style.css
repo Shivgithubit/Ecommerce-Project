@@ -443,7 +443,9 @@ input {
   -webkit-animation-delay: 3s;
           animation-delay: 3s;
 }
-
+.content>.title{
+  padding: 10px;
+}
 .section-title {
   line-height: 1;
   margin-bottom: 50px;
@@ -456,6 +458,7 @@ input {
   color: #000000;
   margin: 0 0 28px;
   line-height: 34px;
+  /* padding: 100px; */
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .section-title .title {
