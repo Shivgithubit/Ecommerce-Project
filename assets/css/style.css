@@ -1574,11 +1574,17 @@ body.offcanvas-open {
 }
 
 .bg-color1 {
-  background-color: #68778b;
+  /* background-color: #68778b; */
+  /* background: linear-gradient(blue,white); */
+  /* background-color: rgb(1, 1, 169); */
+  background: linear-gradient(white,#ffde00)
+ 
+
 }
 
 .bg-color2 {
   background-color: #cebdb5;
+  /* background-color: yellow; */
 }
 
 .bg-color3 {
