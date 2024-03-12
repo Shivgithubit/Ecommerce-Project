@@ -19,7 +19,11 @@
             flex-direction: row;
             align-items: center;
             height: 100vh;
-            background: linear-gradient(White, cyan);
+            width: auto;
+            /* background: linear-gradient(white, cyan); */
+            background-color: #4158D0;
+            background-image: linear-gradient(45deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+
             /* h: 100vh; */
             font-family: Verdana, Geneva, Tahoma, sans-serif;
             position: relative;
@@ -37,7 +41,6 @@
             justify-content: center;
             align-items: center;
             margin-bottom: 40px;
-
         }
 
         h1 {
@@ -84,7 +87,7 @@
             padding: 20px;
         }
 
-        .click {
+        .button {
             padding: 10px;
             width: 300px;
             background: linear-gradient(Blue, aqua);
@@ -93,10 +96,10 @@
             font-weight: bolder;
             font-size: 20px;
             margin-top: 10px;
-           
+
         }
 
-        .click:hover{
+        .click:hover {
             transform: scale(1.1);
         }
 
@@ -154,19 +157,63 @@
         }
 
         .offer-image img {
-            height: 150px;
-            width: 150px;
+            height: 200px;
+            width: 200px;
             position: absolute;
-            bottom: 400px;
+            bottom: 350px;
             left: 40%;
         }
+
+        .form {
+            /* position: relative; */
+            /* bottom: 200px; */
+            display: none;
+        }
+
+
+        @media screen and (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                height: 100%;
+            }
+
+            .content {
+                width: 100%;
+                padding: 20px;
+            }
+
+            .image-container {
+                width: 100%;
+                margin-bottom: 0;
+            }
+
+            img {
+                max-width: 100%;
+                height: auto;
+                margin-top: 20px;
+            }
+
+            .offer-image img {
+                 bottom: 200px;
+                display: none;
+            }
+
+            .button {
+                width: 100%;
+            }
+
+            .list-item-1,
+            .list-item-2 {
+                margin-left: 0;
+            }
+        } 
     </style>
 </head>
 
 <body>
     <div class="container">
         <div class="offer-image">
-            <img src="../assets/images/blog-image/offer.png" alt="">
+            <img src="/assets/images/blog-image/Holi-PNG-Label-Design.png" alt="">
         </div>
 
         <div class="content">
@@ -200,13 +247,31 @@
                 you need exceptional graphics performance. Dynamic Island bubbles up alerts and Live Notifications.
                 Plus, with Always-On display, your Lock Screen stays glanceable, so you don’t have to tap it to stay in
                 the know..</p> -->
-            <a href="/contact.html"><button class="click">Register Now</button></a>
+            <a href="registred.html"><button class="button">Buy Now</button></a>
         </div>
         <div class="image-container">
             <!-- Replace the URL with the actual image URL -->
             <img src="../assets/images/iphone/appleOffer.png" alt="Image">
         </div>
     </div>
+
+
+
+
+
+
+
 </body>
+
+<!-- <script>
+    let div = document.querySelectorAll(".form")[0]
+    console.log(div);
+    let button = document.querySelector(".button");
+
+    button.addEventListener("click", e => {
+          e.preventDefault();
+          div.style.display="block";
+    })
+</script> -->
 
 </html>

@@ -27,13 +27,33 @@
     <!-- Minify Version -->
     <!-- <link rel="stylesheet" href="assets/css/plugins.min.css">
     <link rel="stylesheet" href="assets/css/style.min.css"> -->
-     
+
     <style>
         .main-menu.position-relative {
             background: #f58013;
             width: 60%;
             margin-left: 25%;
             margin-top: -95px;
+        }
+
+        .shrink img {
+            height: 400px;
+            width: 400px;
+            -webkit-transition: all 1s ease;
+            -moz-transition: all 1s ease;
+            -o-transition: all 1s ease;
+            -ms-transition: all 1s ease;
+            transition: all 1s ease;
+        }
+
+        .shrink img:hover {
+            width: 300px;
+            height: 300px;
+
+        }
+
+        .thumb {
+            height: 200px;
         }
     </style>
 </head>
@@ -132,7 +152,7 @@
                                 <a href="#offcanvas-cart"
                                     class="header-action-btn header-action-btn-cart offcanvas-toggle pr-0">
                                     <i class="pe-7s-shopbag"></i>
-                                    <span class="header-action-num">01</span>
+                                    <!-- <span class="header-action-num">01</span> -->
                                     <!-- <span class="cart-amount">€30.00</span> -->
                                 </a>
                                 <a href="#offcanvas-mobile-menu"
@@ -154,8 +174,7 @@
                                 <li class="dropdown"><a href="index.html">Home</a>
                                 </li>
                                 <li><a href="about.html">About</a></li>
-                                <li class="dropdown position-static"><a href="shop-left-sidebar-1.html">Shop <i
-                                            class="fa fa-angle-down"></i></a>
+                                <li class="dropdown position-static"><a href="shop-left-sidebar-1.html">Shop</a>
                                     <!-- <ul class="mega-menu d-block">
                                         <li class="d-flex">
                                             <ul class="d-block">
@@ -440,25 +459,27 @@
                                                         <span class="badges">
                                                             <span class="sale">-5%</span>
                                                         </span>
-                                                        <div class="thumb">
+                                                        <div class="thumb" style="height: 200px;">
                                                             <a href="Single Product/Sam-GalaxyF54.html" class="image">
-                                                                <img src="assets/images/samsung/Sam-GalaxyF54-1.jpg" style="margin-left: 50px; height: 200px;"
+                                                                <img src="assets/images/samsung/Sam-GalaxyF54-1.jpg"
+                                                                    style="margin-left: 50px; height: 200px;"
                                                                     alt="Product" style="height: 200px;" />
-                                                                <img class="hover-image"
-                                                                style="margin-left: 50px; height: 300px;"
+                                                                <img class="hover-image shrink img"
+                                                                    style="margin-left: 50px; height: 200px; padding: 20px;"
                                                                     src="assets/images/samsung/Sam-GalaxyF54-1.jpg"
-                                                                    alt="Product" style="height: 200px;" />
+                                                                    alt="Product" />
                                                             </a>
                                                         </div>
                                                         <div class="content">
                                                             <span class="category"><a href="#">Brand:SAMSUNG</a></span>
                                                             <h5 class="title"><a
-                                                                    href="Single Product/Sam-GalaxyF54.html">SAMSUNG Galaxy F54 5G (Meteor Blue, 256 GB)  (8 GB RAM
+                                                                    href="Single Product/Sam-GalaxyF54.html">SAMSUNG
+                                                                    Galaxy F54 5G
                                                                 </a>
                                                             </h5>
                                                             <span class="price">
                                                                 <!-- <span class="old">₹24,999</span> -->
-                                                                <span class="new">₹23,180.</span>
+                                                                <span class="new">₹23,180</span>
                                                             </span>
                                                         </div>
                                                         <div class="actions">
@@ -487,15 +508,17 @@
                                                         <span class="badges">
                                                             <span class="new">Sale</span>
                                                         </span>
-                                                        <div class="thumb">
+                                                        <div class="thumb" style="height: 200px;">
                                                             <a href="Single Product/Oppo-Reno-11.html" class="image">
                                                                 <img src="assets/images/oppo/Oppo-Reno-11-1.webp"
-                                                                style="margin-left: 50px; height: 250px;"
-                                                                    alt="Product" style="height: 250px;" />
+                                                                    style="margin-left: 50px; height: 200px;"
+                                                                    alt="Product"
+                                                                    style="height: 150px; padding: 40px;" />
                                                                 <img class="hover-image"
                                                                     src="assets/images/oppo/Oppo-Reno-11-1.webp"
-                                                                    style="margin-left: 50px; height: 250px;"
-                                                                    alt="Product" style="height: 250px;" />
+                                                                    style="margin-left: 50px; height: 190px;"
+                                                                    alt="Product"
+                                                                    style="height: 150px ; padding: 40px;" />
                                                             </a>
                                                         </div>
                                                         <div class="content">
@@ -535,19 +558,22 @@
                                                             <span class="sale">-8%</span>
                                                             <span class="new">Sale</span>
                                                         </span>
-                                                        <div class="thumb">
-                                                            <a href="Single Product/sam-galaxy-zflip.html" class="image">
+                                                        <div class="thumb" style="height: 200px;">
+                                                            <a href="Single Product/sam-galaxy-zflip.html"
+                                                                class="image">
                                                                 <img src="assets/images/samsung/zflip4.jpg"
-                                                                    alt="Product" style="height: 250px;" />
+                                                                    alt="Product"
+                                                                    style="height:200px; margin-left: 30px;" />
                                                                 <img class="hover-image"
-                                                                    src="assets/images/samsung/zflip4.jpg"
-                                                                    alt="Product" style="height: 250px;" />
+                                                                    src="assets/images/samsung/zflip4.jpg" alt="Product"
+                                                                    style="height:200px; margin-left: 30px;" />
                                                             </a>
                                                         </div>
                                                         <div class="content">
                                                             <span class="category"><a href="#">Brand:SAMSUNG</a></span>
                                                             <h5 class="title"><a
-                                                                    href="Single Product/sam-galaxy-zflip.html">
+                                                                    href="Single Product/sam-galaxy-zflip.html">samsung
+                                                                    zflip
                                                                 </a>
                                                             </h5>
                                                             <span class="price">
@@ -580,19 +606,20 @@
                                                     <div class="product">
                                                         <span class="badges">
                                                         </span>
-                                                        <div class="thumb">
+                                                        <div class="thumb" style="height: 200px;">
                                                             <a href="Single Product/samsung-zfold4.html" class="image">
-                                                                <img src="assets/images/samsung/galaxy-z-fold4_1.webp" alt="
-                                                                    Product" style="height: 250px;" />
+                                                                <img
+                                                                    src="assets/images/samsung/galaxy-z-fold4_1.webp" />
                                                                 <img class="hover-image"
                                                                     src="assets/images/samsung/galaxy-z-fold4_1.webp"
-                                                                    alt="Product" style="height: 250px;" />
+                                                                    alt="Product" />
                                                             </a>
                                                         </div>
                                                         <div class="content">
                                                             <span class="category"><a href="#">Brand:
                                                                     APPLE(PH)</a></span>
-                                                            <h5 class="title"><a href="Single Product/samsung-zfold4.html">samsung-z-fold4
+                                                            <h5 class="title"><a
+                                                                    href="Single Product/samsung-zfold4.html">samsung-z-fold4
                                                                 </a>
                                                             </h5>
                                                             <span class="price">
@@ -625,19 +652,23 @@
                                                         <span class="badges">
                                                             <span class="new">New</span>
                                                         </span>
-                                                        <div class="thumb">
-                                                            <a href="Single Product/sam-galaxy-s23Ultra.html" class="image">
+                                                        <div class="thumb" style="height: 200px;">
+                                                            <a href="Single Product/sam-galaxy-s23Ultra.html"
+                                                                class="image">
                                                                 <img src="assets/images/samsung/SamsungGalaxyS23Ultra.avif"
-                                                                    alt="Product" style="height: 200px; margin-left: 60px;" />
+                                                                    alt="Product"
+                                                                    style="height: 150px; margin-left: 90px;" />
                                                                 <img class="hover-image"
                                                                     src="assets/images/samsung/SamsungGalaxyS23Ultra.avif"
-                                                                    alt="Product" style="height: 200px;  margin-left: 60px;" />
+                                                                    alt="Product"
+                                                                    style="height: 150px;  margin-left: 90px;" />
                                                             </a>
                                                         </div>
                                                         <div class="content">
                                                             <span class="category"><a href="#">Brand:SAMSUNG</a></span>
                                                             <h5 class="title"><a
-                                                                    hhref="Single Product/sam-galaxy-s23Ultra.html">samsung s23 ultra
+                                                                    href="Single Product/sam-galaxy-s23Ultra.html">samsung
+                                                                    s23 ultra
                                                                 </a>
                                                             </h5>
                                                             <span class="price">
@@ -670,26 +701,26 @@
                                                         <span class="badges">
                                                             <span class="new">Sale</span>
                                                         </span>
-                                                        <div class="thumb">
+                                                        <div class="thumb" style="height: 200px;">
                                                             <a href="Single Product/sam-zflip3.html" class="image">
                                                                 <img src="assets/images/samsung/zflip3.jpg" alt="
-                                                                    Product" style="height: 250px;  margin-left: 18%;"" />
+                                                                    Product"
+                                                                    style="height: 150px; margin-left: 20px;" />
                                                                 <img class=" hover-image"
-                                                                    src="assets/images/samsung/zflip3.jpg"
-                                                                    alt="Product"
-                                                                    style="height: 250px;  margin-left: 18%;"" />
+                                                                    src="assets/images/samsung/zflip3.jpg" alt="Product"
+                                                                    style="height: 150px; margin-left: 20px;" />
                                                             </a>
                                                         </div>
                                                         <div class=" content">
-                                                                <span class="category"><a href="#">Brand:
-                                                                        Apple</a></span>
-                                                                <h5 class="title"><a
-                                                                        href="Single Product/sam-zflip3.html">
-                                                                    </a>
-                                                                </h5>
-                                                                <span class="price">
-                                                                    <span class="new">₹46,999</span>
-                                                                </span>
+                                                            <span class="category"><a href="#">Brand:
+                                                                    Apple</a></span>
+                                                            <h5 class="title"><a
+                                                                    href="Single Product/sam-zflip3.html">Samsung Zflip
+                                                                </a>
+                                                            </h5>
+                                                            <span class="price">
+                                                                <span class="new">₹46,999</span>
+                                                            </span>
                                                         </div>
                                                         <div class="actions">
                                                             <button title="Add To Cart" class="action add-to-cart"
@@ -717,21 +748,25 @@
                                                         <span class="badges">
                                                             <span class="new">New</span>
                                                         </span>
-                                                        <div class="thumb">
+                                                        <div class="thumb" style="height: 200px;">
                                                             <a href="Single Product/iphone-14.html" class="image">
-                                                                <img src="assets/images/iphone/iphone-14.webp" alt="Product"
-                                                                    style="height: 250px; margin-left: 20%;" />
+                                                                <img src="assets/images/iphone/iphone-14.webp"
+                                                                    alt="Product"
+                                                                    style="height: 150px; margin-left: 50px;" />
                                                                 <img class="hover-image"
-                                                                    src="assets/images/iphone/iphone-14.webp" alt="Product"
-                                                                    style="height: 250px; margin-left:20%; "/>
+                                                                    src="assets/images/iphone/iphone-14.webp"
+                                                                    alt="Product"
+                                                                    style="height: 150px; margin-left: 50px;" />
                                                         </div>
                                                         <div class="content">
-                                                            <span class="category"><a href="#">Brand: SASMSUNG</a></span>
-                                                            <h5 class="title"><a href="single-product.html">iphone 14 pro
+                                                            <span class="category"><a href="#">Brand:
+                                                                    SASMSUNG</a></span>
+                                                            <h5 class="title"><a href="single-product.html">iphone 14
+                                                                    pro
                                                                 </a>
                                                             </h5>
                                                             <span class="price">
-                                                                <span class="new">₹32,990.00
+                                                                <span class="new">₹32,990
                                                                 </span>
                                                             </span>
                                                         </div>
@@ -766,24 +801,25 @@
                                                             <a href="Single Product/iphone-14plus.html" class="image">
                                                                 <img src="assets/images/iphone/iphone-14plus-1.jpg"
                                                                     alt="Product"
-                                                                    style="height: 250px;  margin-left: 30%;"" />
+                                                                    style="height: 150px; margin-left: 50px;" />
                                                                 <img class=" hover-image"
                                                                     src="assets/images/iphone/iphone-14plus-1.jpg"
                                                                     alt="Product"
-                                                                    style="height: 250px;  margin-left: 30%;"" />
+                                                                    style="height: 150px; margin-left: 50px;" />
                                                             </a>
                                                         </div>
                                                         <div class=" content">
-                                                                <span class="category"><a href="#">Brand:
-                                                                        REDMI</a></span>
-                                                                <h5 class="title"><a
-                                                                        href="single-product.html">iphone 14 plus
-                                                                    </a>
-                                                                </h5>
-                                                                <span class="price">
-                                                                    <span class="old">₹23,399</span>
-                                                                    <span class="new"> ₹21,059.10.</span>
-                                                                </span>
+                                                            <span class="category"><a href="#">Brand:
+                                                                    APPLE</a></span>
+                                                            <h5 class="title"><a
+                                                                    href="Single Product/iphone-14plus.html">iphone
+                                                                    14 plus
+                                                                </a>
+                                                            </h5>
+                                                            <span class="price">
+                                                                <span class="old">₹23,399</span>
+                                                                <span class="new"> ₹21,059.10.</span>
+                                                            </span>
                                                         </div>
                                                         <div class="actions">
                                                             <button title="Add To Cart" class="action add-to-cart"
@@ -811,18 +847,21 @@
                                                         <span class="badges">
                                                             <span class="new">New</span>
                                                         </span>
-                                                        <div class="thumb">
+                                                        <div class="thumb" style="height: 200px;">
                                                             <a href="Single Product/Oppo-N2-flip.html" class="image">
                                                                 <img src="assets/images/oppo/oppo-N2flip.jpg"
-                                                                    alt="Product" style="height: 250px;" />
+                                                                    alt="Product"
+                                                                    style="height: 150px; margin-left: 50px;" />
                                                                 <img class="hover-image"
                                                                     src="assets/images/oppo/oppo-N2flip.jpg"
-                                                                    alt="Product" style="height: 250px;" />
+                                                                    alt="Product"
+                                                                    style="height: 150px; margin-left: 50px;" />
                                                             </a>
                                                         </div>
                                                         <div class="content">
                                                             <span class="category"><a href="#">Brand:OPPO</a></span>
-                                                            <h5 class="title"><a href="Single Product/Oppo-N2-flip.html">oppo-N2flip
+                                                            <h5 class="title"><a
+                                                                    href="Single Product/Oppo-N2-flip.html">oppo-N2flip
                                                                 </a>
                                                             </h5>
                                                             <span class="price">
@@ -855,19 +894,22 @@
                                                         <span class="badges">
                                                             <span class="new">New</span>
                                                         </span>
-                                                        <div class="thumb">
+                                                        <div class="thumb" style="height: 200px;">
                                                             <a href="Single Product/iphone-13.html" class="image">
                                                                 <img src="assets/images/iphone/iphone-13.jpg"
-                                                                    alt="Product" style="height: 250px;" />
+                                                                    alt="Product"
+                                                                    style="height: 150px; margin-left: 50px;" />
                                                                 <img class="hover-image"
                                                                     src="assets/images/iphone/iphone-13.jpg"
-                                                                    alt="Product" style="height: 250px;" />
+                                                                    alt="Product"
+                                                                    style="height: 150px; margin-left: 50px;" />
                                                             </a>
                                                         </div>
                                                         <div class="content">
                                                             <span class="category"><a
                                                                     href="#">Brand:APPLE(PH)</a></span>
-                                                            <h5 class="title"><a href="Single Product/iphone-13.html">iphone-13
+                                                            <h5 class="title"><a
+                                                                    href="Single Product/iphone-13.html">iphone-13
                                                                 </a>
                                                             </h5>
                                                             <span class="price">
@@ -901,18 +943,20 @@
                                                             <span class="sale">-10%</span>
                                                             <span class="new">New</span>
                                                         </span>
-                                                        <div class="thumb">
+                                                        <div class="thumb" style="height: 200px;">
                                                             <a href="Single Product/vivo-v21.html" class="image">
                                                                 <img src="assets/images/vivo/Vivo-V21e.jpg"
-                                                                    alt="Product" style="height: 250px;" />
+                                                                    alt="Product"
+                                                                    style="height: 150px; margin-left: 50px;" />
                                                                 <img class="hover-image"
                                                                     src="assets/images/vivo/Vivo-V21e.jpg" alt="Product"
-                                                                    style="height: 250px;" />
+                                                                    style="height: 150px; margin-left: 50px;" />
                                                             </a>
                                                         </div>
                                                         <div class="content">
                                                             <span class="category"><a href="#">Brand: VIVO</a></span>
-                                                            <h5 class="title"><a href="single-product.html">Vivo-V21e
+                                                            <h5 class="title"><a
+                                                                    href="Single Product/vivo-v21.html">Vivo-V21e
                                                                 </a>
                                                             </h5>
                                                             <span class="price">
@@ -945,19 +989,24 @@
                                                     <div class="product">
                                                         <span class="badges">
                                                         </span>
-                                                        <div class="thumb">
-                                                            <a href="Single Product/Samsung Galaxy S21 FE 5G.html" class="image">
+                                                        <div class="thumb" style="height: 200px;">
+                                                            <a href="Single Product/Samsung Galaxy S21 FE 5G.html"
+                                                                class="image">
                                                                 <img src="assets/images/samsung/sam-galaxy-S21FE.jpg"
-                                                                    alt="Product" style="height: 250px;" />
+                                                                    alt="Product"
+                                                                    style="height: 150px; margin-left: 50px;" />
                                                                 <img class="hover-image"
                                                                     src="assets/images/samsung/sam-galaxy-S21FE.jpg"
-                                                                    style="height: 250px;" alt="Product" />
+                                                                    style="height: 150px; margin-left: 50px;"
+                                                                    alt="Product" />
                                                             </a>
                                                         </div>
                                                         <div class="content">
                                                             <span class="category"><a href="#">Brand:SAMSUNG</a></span>
-                                                            <h5 class="title"><a href="Single Product/"
-                                                                    Samsung-galaxy-S21FE </a>
+                                                            <h5 class="title"><a
+                                                                    href="Single Product/Samsung Galaxy S21 FE 5G.html">Samsung-galaxy-S21FE
+                                                                </a>
+
                                                             </h5>
                                                             <span class="price">
                                                                 <span class="new">₹28,499</span>
@@ -992,7 +1041,7 @@
                                                         <div class="product">
                                                             <span class="badges">
                                                             </span>
-                                                            <div class="thumb">
+                                                            <div class="thumb" style="height: 200px;">
                                                                 <a href="single-product.html" class="image">
                                                                     <img src="assets/images/oppo/oppo-Reno-8.jpg"
                                                                         alt="Product"
@@ -1040,7 +1089,8 @@
                                                             <div class="content">
                                                                 <span class="category"><a href="#">Brand OPPO</a></span>
                                                                 <h5 class="title"><a
-                                                                        href="Single Product/Oppo-Reno-8.html">oppo-Reno-8</a></h5>
+                                                                        href="Single Product/Oppo-Reno-8.html">oppo-Reno-8</a>
+                                                                </h5>
                                                                 <p>The Oppo Reno 8 is a cutting-edge smartphone
                                                                     featuring a sleek design and advanced technology.
                                                                     Boasting a vibrant and large display, the phone
@@ -1090,7 +1140,7 @@
                                                                 <span class="sale">-10%</span>
                                                                 <span class="new">New</span>
                                                             </span>
-                                                            <div class="thumb">
+                                                            <div class="thumb" style="height: 200px;">
                                                                 <a href="Single Product/Vivo-v29-5g.html" class="image">
                                                                     <img src="assets/images/vivo/vivo-V29-5g.jpg"
                                                                         alt="Product"
@@ -1142,7 +1192,8 @@
                                                             <div class="content">
                                                                 <span class="category"><a href="#">Brand VIVO</a></span>
                                                                 <h5 class="title"><a
-                                                                        href="Single Product/Vivo-v29-5g.html">Vivo-V29-5g </a></h5>
+                                                                        href="Single Product/Vivo-v29-5g.html">Vivo-V29-5g
+                                                                    </a></h5>
                                                                 <p>The style inspiration is derived from the works of
                                                                     top Indian wedding photographers and KOLs in the
                                                                     industry, ensuring that users can effortlessly
@@ -1187,8 +1238,9 @@
                                                             <span class="badges">
                                                                 <span class="new">Sale</span>
                                                             </span>
-                                                            <div class="thumb">
-                                                                <a href="/Single Product/Oppo-Reno-7.html" class="image">
+                                                            <div class="thumb" style="height: 200px;">
+                                                                <a href="/Single Product/Oppo-Reno-7.html"
+                                                                    class="image">
                                                                     <img src="assets/images/oppo/oppo-Reno7.jpg"
                                                                         alt="Product"
                                                                         style="height: 250px; margin-left: 25%;"" />
@@ -1235,7 +1287,8 @@
                                                             <div class="content">
                                                                 <span class="category"><a href="#">Brand OPPO</a></span>
                                                                 <h5 class="title"><a
-                                                                        href="Single Product/Oppo-Reno-7.html">oppo-Reno7</a></h5>
+                                                                        href="Single Product/Oppo-Reno-7.html">oppo-Reno7</a>
+                                                                </h5>
                                                                 <p>OPPO Reno7 Pro, which is built for photographers,
                                                                     brings out your creative side. You can take
                                                                     photographs and preserve memories without worrying
@@ -1280,8 +1333,9 @@
                                                             <span class="badges">
                                                                 <span class="new">New</span>
                                                             </span>
-                                                            <div class="thumb">
-                                                                <a href="Single Product/sam-galaxy-s23Ultra.html" class="image">
+                                                            <div class="thumb" style="height: 200px;">
+                                                                <a href="Single Product/sam-galaxy-s23Ultra.html"
+                                                                    class="image">
                                                                     <img src="assets/images/samsung/Sam-galaxy-S23-Ultra.jpg"
                                                                         alt="Product" style="height: 250px;" />
                                                                     <img class="hover-image"
@@ -1379,7 +1433,7 @@
                                                         <div class="product">
                                                             <span class="badges">
                                                             </span>
-                                                            <div class="thumb">
+                                                            <div class="thumb" style="height: 200px;">
                                                                 <a href="Single Product/iphone-15.html" class="image">
                                                                     <img src="assets/images/iphone/iphone-15-proMax.jpg"
                                                                         alt="Product" />
@@ -1473,7 +1527,7 @@
                                                                 <span class="sale">-8%</span>
                                                                 <span class="new">Sale</span>
                                                             </span>
-                                                            <div class="thumb">
+                                                            <div class="thumb" style="height: 200px;">
                                                                 <a href="single-product.html" class="image">
                                                                     <img src="assets/images/samsung/Sam-Galaxy-Zfold.jpg"
                                                                         alt="Product" />
@@ -1567,7 +1621,7 @@
                                                         <div class="product">
                                                             <span class="badges">
                                                             </span>
-                                                            <div class="thumb">
+                                                            <div class="thumb" style="height: 200px;">
                                                                 <a href="Single Product/viv0-x90.html" class="image">
                                                                     <img src="assets/images/vivo/vivo-X90.jpg"
                                                                         alt="Product" />
