@@ -130,7 +130,6 @@ h4,
 h5,
 h6 {
   font-family: "Poppins", sans-serif;
-  margin-top: 37px;
   color: #000;
 }
 
@@ -258,7 +257,7 @@ input {
 
 
   .pb-100px {
-    padding: 14px
+    padding: 60px;
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -701,11 +700,7 @@ header .header-top .top-nav ul li a i {
 
 header .header-bottom {
   padding: 18px 0;
-<<<<<<< HEAD
-  background: #525259
-=======
   background:#141038;
->>>>>>> 0a49602f47ebbc50132af64cc896755be338dcd5
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px),
@@ -1752,16 +1747,7 @@ body.offcanvas-open {
 }
 
 .bg-color1 {
-<<<<<<< HEAD
-  /* background-color: #68778b; */
-  /* background: linear-gradient(blue,white); */
-  /* background-color: rgb(1, 1, 169); */
-  background: linear-gradient(white, #ffde00)
-=======
-
-  background: linear-gradient(45deg,#170672, #f14ecb, #170672);
-
->>>>>>> 0a49602f47ebbc50132af64cc896755be338dcd5
+   background: linear-gradient(45deg,#170672, #f14ecb, #170672);
 }
 
 .bg-color2 {
@@ -1873,16 +1859,9 @@ body.offcanvas-open {
 
 .hero-slide-image img {
   max-width: 100%;
-<<<<<<< HEAD
-  height: 620px;
-  width: 530px;
-  filter: drop-shadow(51px 38px 36px black);
-  ;
-=======
-  height: 430px;
+  height: 420px;
   width: 430px;
-  filter: drop-shadow(51px 38px 36px black);;
->>>>>>> 0a49602f47ebbc50132af64cc896755be338dcd5
+  filter: drop-shadow(51px 38px 36px black);
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
   -webkit-animation-fill-mode: both;
@@ -1954,13 +1933,8 @@ only screen and (min-width: 768px) and (max-width: 991px) {
   -webkit-animation-name: fadeInUp;
   animation-name: fadeInUp;
   -webkit-animation-delay: 1s;
-<<<<<<< HEAD
   animation-delay: 1s;
   margin-bottom: 165px;
-=======
-          animation-delay: 1s;
-          margin-bottom: 42px;
->>>>>>> 0a49602f47ebbc50132af64cc896755be338dcd5
 }
 
 .hero-slide-content {
@@ -2898,31 +2872,20 @@ only screen and (max-width: 767px) {
 }
 
 .style-one .single-banner {
-  
   position: relative;
   overflow: hidden;
   border-radius: 0;
 }
 
 .style-one .single-banner img {
-  padding: 12px;
-  
+  max-width: 100%;
+  width: 64%;
   -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
 }
-<<<<<<< HEAD
-.iphoneimg img{
-  width: 408px;
-  height: 403px;
-}
-
- h3.title.iphone{
-  margin-top: 30px
-=======
 
 .iphoneimg img {
   width: 89%;
->>>>>>> a562b78fa2eb988dc8bfbb9aa0b4481c74d3e2d0
 }
 
 .style-one .single-banner .banner-content {
@@ -5593,8 +5556,8 @@ only screen and (min-width: 768px) and (max-width: 991px) {
 }
 
 .trstimonial-area {
-  background-color: #e1cc92;
-  padding-bottom: 8px;
+  background-color: #a6abb0;
+  padding-bottom: 80px;
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -6473,17 +6436,9 @@ only screen and (max-width: 575px) {
 }
 
 .footer-area .footer-top {
-<<<<<<< HEAD
-  padding: 56px 0 66px 0;
-    background: #141038;
-=======
   padding: 100px 0 100px 0;
-<<<<<<< HEAD
-  background: #525259;
-=======
   background:#141038;
->>>>>>> 0a49602f47ebbc50132af64cc896755be338dcd5
->>>>>>> a562b78fa2eb988dc8bfbb9aa0b4481c74d3e2d0
+
 }
 
 .footer-logo a img {
