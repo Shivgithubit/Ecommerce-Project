@@ -130,6 +130,7 @@ h4,
 h5,
 h6 {
   font-family: "Poppins", sans-serif;
+  margin-top: 37px;
   color: #000;
 }
 
@@ -257,7 +258,7 @@ input {
 
 
   .pb-100px {
-    padding: 60px;
+    padding: 14px
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -2897,20 +2898,31 @@ only screen and (max-width: 767px) {
 }
 
 .style-one .single-banner {
+  
   position: relative;
   overflow: hidden;
   border-radius: 0;
 }
 
 .style-one .single-banner img {
-  max-width: 100%;
-  width: 64%;
+  padding: 12px;
+  
   -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
 }
+<<<<<<< HEAD
+.iphoneimg img{
+  width: 408px;
+  height: 403px;
+}
+
+ h3.title.iphone{
+  margin-top: 30px
+=======
 
 .iphoneimg img {
   width: 89%;
+>>>>>>> a562b78fa2eb988dc8bfbb9aa0b4481c74d3e2d0
 }
 
 .style-one .single-banner .banner-content {
@@ -5581,8 +5593,8 @@ only screen and (min-width: 768px) and (max-width: 991px) {
 }
 
 .trstimonial-area {
-  background-color: #a6abb0;
-  padding-bottom: 80px;
+  background-color: #e1cc92;
+  padding-bottom: 8px;
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -6461,12 +6473,17 @@ only screen and (max-width: 575px) {
 }
 
 .footer-area .footer-top {
+<<<<<<< HEAD
+  padding: 56px 0 66px 0;
+    background: #141038;
+=======
   padding: 100px 0 100px 0;
 <<<<<<< HEAD
   background: #525259;
 =======
   background:#141038;
 >>>>>>> 0a49602f47ebbc50132af64cc896755be338dcd5
+>>>>>>> a562b78fa2eb988dc8bfbb9aa0b4481c74d3e2d0
 }
 
 .footer-logo a img {
