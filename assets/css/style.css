@@ -118,6 +118,7 @@ h4,
 h5,
 h6 {
   font-family: "Poppins", sans-serif;
+  margin-top: 37px;
   color: #000;
 }
 
@@ -240,7 +241,7 @@ input {
 
 
   .pb-100px {
-    padding: 60px;
+    padding: 14px
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .pb-100px {
@@ -2577,18 +2578,24 @@ body.offcanvas-open {
 }
 
 .style-one .single-banner {
+  
   position: relative;
   overflow: hidden;
   border-radius: 0;
 }
 .style-one .single-banner img {
-  max-width: 100%;
-  width: 64%;
+  padding: 12px;
+  
   -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
 }
 .iphoneimg img{
-  width: 89%;
+  width: 408px;
+  height: 403px;
+}
+
+ h3.title.iphone{
+  margin-top: 30px
 }
 .style-one .single-banner .banner-content {
   position: absolute;
@@ -4901,8 +4908,8 @@ body.offcanvas-open {
   font-weight: 400;
 }
 .trstimonial-area {
-  background-color: #a6abb0;
-  padding-bottom: 80px;
+  background-color: #e1cc92;
+  padding-bottom: 8px;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .trstimonial-area {
@@ -5671,8 +5678,8 @@ body.offcanvas-open {
   background: #f2f8fd;
 }
 .footer-area .footer-top {
-  padding: 100px 0 100px 0;
-  background:#141038;
+  padding: 56px 0 66px 0;
+    background: #141038;
 }
 .footer-logo a img{
   height: 145px;
