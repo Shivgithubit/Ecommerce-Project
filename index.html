@@ -39,6 +39,44 @@
             margin-top: -95px;
         }
     </style>
+    <!-- =========================================banner css start============================= -->
+    <style>
+        .carousel {
+          width: 100%;
+          overflow: hidden;
+          position: relative;
+        }
+        .carousel-slide {
+          display: none;
+        }
+        .carousel-slide img {
+          width: 100%;
+          height: 400px;
+        }
+        .carousel-slide.active {
+          display: block;
+        }
+        .prev{
+          position: absolute;
+          top: 124rem;
+          left: 10px;
+          height: 60px;
+          width: 80px;
+          border-radius: 0px 30% 30% 0px;
+          background-color: rgba(226, 142, 31, 0.616);
+        }
+        .next{
+          position: absolute;
+          top: 124rem;
+          right: 10px;
+          height: 60px;
+          width: 80px;
+          border-radius:  30%  0px 0px 30% ;
+          background-color: rgba(226, 142, 31, 0.616);
+        }
+      </style>
+
+      <!-- ===================================================banner css end=========================== -->
 </head>
 
 <body>
@@ -398,7 +436,7 @@
                                     class="col-xl-6 col-lg-6 col-md-6 col-sm-6 d-flex justify-content-center position-relative align-items-end">
                                     <div class="show-case">
                                         <div class="hero-slide-image">
-                                            <img src="/imgs/elegant-smartphone-composition-removebg-preview.png"
+                                            <img src="../assets/images/iphone/appleOffer.png" height="200px"
                                                 alt="" />
                                         </div>
                                     </div>
@@ -420,7 +458,8 @@
     </div>
     <!-- Hero/Intro Slider End -->
     <!-- Banner Area Start -->
-    <div class="banner-area style-one pt-100px pb-100px">
+
+    <!-- <div class="banner-area style-one pt-100px pb-100px">
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
@@ -462,7 +501,12 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
+
+
+
+
+
     <!-- Banner Area End -->
     <!-- Product Area Start -->
     <div class="product-area pb-100px">
@@ -1466,6 +1510,31 @@
     </div>
     <!-- Product Area End -->
 
+    <!-- ====================================Banner================================================ -->
+    
+
+    
+<div class="carousel">
+    <div class="carousel-slide active">
+      <img src="/assets/images/banner/background2.png" alt="Image 1">
+    </div>
+    <div class="carousel-slide">
+      <img src="/assets/images/banner/banner img.jpg" alt="Image 2">
+    </div>
+    <div class="carousel-slide">
+      <img src="/assets/images/banner/background3.jpg" alt="Image 3">
+    </div>
+  </div>
+
+  <button class="prev">Prev</button>
+<button class="next">Next</button>
+
+
+
+
+
+    <!-- ============================================================================ -->
+
     <!-- Testimonial area start -->
     <div class="trstimonial-area pt-100px pb-100px">
         <div class="container">
@@ -1900,6 +1969,58 @@
         })();
     </script>
     <!--End of Tawk.to Script-->
+
+
+
+
+    <!-- ============================Banner Script start================= -->
+    
+    <script>
+        const slides = document.querySelectorAll('.carousel-slide');
+        const totalSlides = slides.length;
+        let currentIndex = 0;
+        const slideInterval = 3000; // Change slide interval as needed (in milliseconds)
+        let slideTimer;
+        
+        function showSlide(index) {
+            slides.forEach((slide, i) => {
+                if (i === index) {
+                    slide.classList.add('active');
+                } else {
+                    slide.classList.remove('active');
+                }
+            });
+        }
+        
+        function nextSlide() {
+            currentIndex = (currentIndex + 1) % totalSlides;
+            showSlide(currentIndex);
+        }
+        
+        function startSlideShow() {
+          slideTimer = setInterval(nextSlide, slideInterval);
+        }
+        
+        function stopSlideShow() {
+            clearInterval(slideTimer);
+        }
+        
+        document.querySelector('.next').addEventListener('click', () => {
+          stopSlideShow();
+          nextSlide();
+          startSlideShow();
+        });
+        
+        document.querySelector('.prev').addEventListener('click', () => {
+          stopSlideShow();
+          currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+          showSlide(currentIndex);
+          startSlideShow();
+        });
+      
+        startSlideShow();
+      </script>
+<!-- ============================Banner Script end================= -->
 </body>
 
 

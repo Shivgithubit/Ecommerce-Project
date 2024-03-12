@@ -255,8 +255,9 @@ input {
   }
 }
 
-.pb-100px {
-  padding-bottom: 100px;
+
+  .pb-100px {
+    padding: 60px;
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -699,7 +700,11 @@ header .header-top .top-nav ul li a i {
 
 header .header-bottom {
   padding: 18px 0;
+<<<<<<< HEAD
   background: #525259
+=======
+  background:#141038;
+>>>>>>> 0a49602f47ebbc50132af64cc896755be338dcd5
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px),
@@ -1746,10 +1751,16 @@ body.offcanvas-open {
 }
 
 .bg-color1 {
+<<<<<<< HEAD
   /* background-color: #68778b; */
   /* background: linear-gradient(blue,white); */
   /* background-color: rgb(1, 1, 169); */
   background: linear-gradient(white, #ffde00)
+=======
+
+  background: linear-gradient(45deg,#170672, #f14ecb, #170672);
+
+>>>>>>> 0a49602f47ebbc50132af64cc896755be338dcd5
 }
 
 .bg-color2 {
@@ -1762,7 +1773,7 @@ body.offcanvas-open {
 }
 
 .slider-height {
-  height: 748px;
+  height: 535px;
 }
 
 @media only screen and (min-width: 1200px) and (max-width: 1599px) {
@@ -1861,10 +1872,16 @@ body.offcanvas-open {
 
 .hero-slide-image img {
   max-width: 100%;
+<<<<<<< HEAD
   height: 620px;
   width: 530px;
   filter: drop-shadow(51px 38px 36px black);
   ;
+=======
+  height: 430px;
+  width: 430px;
+  filter: drop-shadow(51px 38px 36px black);;
+>>>>>>> 0a49602f47ebbc50132af64cc896755be338dcd5
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
   -webkit-animation-fill-mode: both;
@@ -1936,8 +1953,13 @@ only screen and (min-width: 768px) and (max-width: 991px) {
   -webkit-animation-name: fadeInUp;
   animation-name: fadeInUp;
   -webkit-animation-delay: 1s;
+<<<<<<< HEAD
   animation-delay: 1s;
   margin-bottom: 165px;
+=======
+          animation-delay: 1s;
+          margin-bottom: 42px;
+>>>>>>> 0a49602f47ebbc50132af64cc896755be338dcd5
 }
 
 .hero-slide-content {
@@ -1971,7 +1993,7 @@ only screen and (min-width: 768px) and (max-width: 991px) {
 .hero-slide-content .title-1 {
   font-size: 40px;
   font-weight: 600;
-  margin-bottom: 50px;
+  margin-bottom: 32px;
   color: #fff;
   line-height: 65px;
   font-family: sans-serif;
@@ -6440,7 +6462,11 @@ only screen and (max-width: 575px) {
 
 .footer-area .footer-top {
   padding: 100px 0 100px 0;
+<<<<<<< HEAD
   background: #525259;
+=======
+  background:#141038;
+>>>>>>> 0a49602f47ebbc50132af64cc896755be338dcd5
 }
 
 .footer-logo a img {
