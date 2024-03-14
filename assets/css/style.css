@@ -256,8 +256,8 @@ input {
 }
 
 
-  .pb-100px {
-    padding: 60px;
+.pb-100px {
+  padding: 60px;
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -560,7 +560,7 @@ only screen and (max-width: 767px) {
 }
 
 .sticky-nav.menu_fixed.style-1 {
-  background-color: #252525;
+  background-color: #141038;
   padding: 20px 0;
 }
 
@@ -700,7 +700,7 @@ header .header-top .top-nav ul li a i {
 
 header .header-bottom {
   padding: 18px 0;
-  background:#141038;
+  background: #141038;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px),
@@ -848,10 +848,10 @@ header .main-menu ul li.dropdown ul.sub-menu {
   text-align: left;
   opacity: 0;
   visibility: hidden;
-  -o-transform-origin: 0% 0%;
+  /* -o-transform-origin: 0% 0%;
   -ms-transform-origin: 0% 0%;
   -moz-transform-origin: 0% 0%;
-  -webkit-transform-origin: 0% 0%;
+  -webkit-transform-origin: 0% 0%; */
   transform-style: preserve-3d;
   -o-transform-style: preserve-3d;
   -moz-transform-style: preserve-3d;
@@ -1747,7 +1747,7 @@ body.offcanvas-open {
 }
 
 .bg-color1 {
-   background: linear-gradient(45deg,#170672, #f14ecb, #170672);
+  background: linear-gradient(45deg, #170672, #f14ecb, #170672);
 }
 
 .bg-color2 {
@@ -2951,7 +2951,7 @@ only screen and (max-width: 767px) {
   }
 }
 
-.category a{
+.category a {
   color: blue !important;
 }
 
@@ -6437,7 +6437,7 @@ only screen and (max-width: 575px) {
 
 .footer-area .footer-top {
   padding: 100px 0 100px 0;
-  background:#141038;
+  background: #141038;
 
 }
 
@@ -11454,5 +11454,85 @@ hr {
 @media screen and (max-width: 410px) {
   .send-button {
     width: 99%;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .mob_logo {
+    height: 100px !important;
+    width: 100px !important;
+    margin-top: 10px;
+
+  }
+
+  .img-responsive {
+    max-height: 30vh;
+    max-width: auto;
+  }
+
+  .breadcrumb-area {
+    height: 20vh;
+  }
+
+  .breadcrumb-title {
+    font-size: 20px !important;
+  }
+
+  .slider_img {
+    height: 90px !important;
+    /* width: 200px !important; */
+  }
+
+  .pb-100px {
+    padding: 10px;
+  }
+
+  .footer-area .footer-container .footer-top .container .row {
+    display: flex;
+    /* flex-wrap: wrap; */
+    flex-direction: row;
+  }
+
+  .footer-logo a img {
+    height: 100px !important;
+    width: 100px !important;
+  }
+
+  .about-text {
+    font-size: 20px;
+  }
+
+}
+
+@media screen and (max-width:768px) {
+  .paragraph {
+    padding: 10px !important;
+    text-align: justify;
+    line-height: 25px;
+    margin-bottom: 20px;
+  }
+
+  .visionimg {
+    display: flex;
+    flex-direction: column;
+    margin-top: 200px;
+    margin-bottom: 200px;
+  }
+
+  .mission {
+    display: flex;
+    flex-direction: column;
+    margin-top: 200px;
+    margin-bottom: 200px;
+  }
+
+  .list-item-2 li {
+    /* margin-top: -10px; */
+    line-height: 26px;
+  }
+
+  .team-image img{
+    height: 200px;
+    width: auto;
   }
 }
