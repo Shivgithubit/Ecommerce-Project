@@ -47,6 +47,21 @@
             position: relative;
         }
 
+        .hero-slide-item {
+            height: 400px;
+        }
+
+        .title-1 {
+            font-size: 30px !important;
+        }
+
+        .hero-slide-image img {
+            /* margin-left: 150px !important; */
+            height: 300px;
+            width: auto;
+            /* margin-top: 50px; */
+        }
+
         .carousel-slide {
             display: none;
         }
@@ -78,6 +93,40 @@
             width: 80px;
             border-radius: 30% 0px 0px 30%;
             background-color: rgba(226, 142, 31, 0.616);
+        }
+
+        @media screen and (max-width:768px) {
+            .carousel-slide img {
+                height: 120px;
+            }
+
+            .pr_img {
+                height: 200px;
+            }
+
+            .title-1 {
+                font-size: 20px !important;
+            }
+
+            .hero-slide-image img {
+                margin-left: 150px !important;
+                height: 200px;
+                margin-top: 50px;
+            }
+
+            .btn-primary {
+                margin-top: 100px;
+            }
+
+            .category {
+                font-size: 10px !important;
+            }
+
+            .hero-slide-item {
+                height: 500px;
+            }
+
+
         }
     </style>
 
@@ -368,7 +417,9 @@
                         <li><a href="about.html">About</a></li>
 
                         <li><a href="shop-left-sidebar-1.html"><span class="menu-text">Shop</span></a>
-                            <!-- <ul class="sub-menu">
+                         <li><a href="offer.html"><span class="menu-text">Offer</span></a>
+                        <li><a href="about.html">About</a></li>
+                        <!-- <ul class="sub-menu">
                                 <li>
                                     <a href="shop-left-sidebar-1.html"><span class="menu-text">Shop Page</span></a>
                                     <ul class="sub-menu">
@@ -1507,8 +1558,8 @@
         </div>
     </div>
 
-    <button class="prev">Prev</button>
-    <button class="next">Next</button>
+    <!-- <button class="prev">Prev</button>
+    <button class="next">Next</button> -->
     <!-- =========================================================//// -->
 
     <div class="banner-area style-one pt-100px pb-100px">
@@ -1516,8 +1567,8 @@
             <div class="row">
                 <div class="col-md-6">
                     <div class="single-banner nth-child-1">
-                        <a href="shop-left-sidebar-1.html"><img src="/assets/images/banner/new-1.jpg" height="300px"
-                                width="300px" alt=""></a>
+                        <a href="shop-left-sidebar-1.html"><img class="pr_img" src="/assets/images/banner/new-1.jpg"
+                                height="300px" width="300px" alt=""></a>
                         <span>
                             <h3 class="title">
                                 Samsung Galaxy M04 Dark Blue.</h3>
@@ -1531,8 +1582,8 @@
 
                     <div class="single-banner banner-content nth-child-1">
                         <a href="/Single Product/sam-galaxy-zflip.html"><img
-                                src="/assets/images/samsung/Sam-Galaxy-Zflip3.jpg" height="300px" width="300px"
-                                alt=""></a>
+                                src="/assets/images/samsung/Sam-Galaxy-Zflip3.jpg" class="pr_img" height="300px"
+                                width="300px" alt=""></a>
 
                         <h3 class="title">
                             Samsung Galaxy Z flip</h3>
@@ -1543,7 +1594,7 @@
                 </div>
                 <div class="col-md-6">
                     <div class="single-banner nth-child-2">
-                        <div class="newimg"><a href="/Single Product/iphone-15-proMax.html"><img
+                        <div class="newimg"><a href="/Single Product/iphone-15-proMax.html"><img class="pr_img"
                                     src="/assets/images/iphone/iphone-15-proMax.jpg" height="300px" width="300px"
                                     alt=""></a></div>
                     </div>
@@ -1555,7 +1606,7 @@
                                 aria-hidden="true"></i></a>
                     </div>
                     <div class="single-banner nth-child-2">
-                        <div class="newimg"><a href="Single Product/iphone-15.html"><img
+                        <div class="newimg"><a href="Single Product/iphone-15.html"><img class="pr_img"
                                     src="/assets/images/banner/new-3.jpg" height="300px" width="300px" alt=""></a></div>
                     </div>
                     <div class="banner-content nth-child-3">
@@ -1733,9 +1784,11 @@
                                 <div class="footer-links">
                                     <div class="footer-row">
                                         <ul class="align-items-center">
-                                            <li class="li"><a class="single-link" href="my-account.html">My
-                                                    Account</a></li>
-                                            <li class="li"><a class="single-link" href="contact.html">Contact</a>
+                                            <li class="li"><a class="single-link" href="index.html">Home
+                                                </a></li>
+                                            <li class="li"><a class="single-link" href="about.html">about</a>
+                                            </li>
+                                            <li class="li"><a class="single-link" href="contact.html">contact</a>
                                             </li>
                                         </ul>
                                     </div>
@@ -1750,12 +1803,12 @@
                                     <div class="footer-row">
                                         <h4 class="footer-herading">Important Links</h4>
                                         <ul class="align-items-center">
-                                            <li class="li"><a class="single-link" href="cart.html">Shopping cart</a>
+                                            <li class="li"><a class="single-link" href="cart.html">shop</a>
                                             </li>
-                                            <li class="li"><a class="single-link" href="shop-left-sidebar.html">Shop</a>
+                                            <li class="li"><a class="single-link"
+                                                    href="shop-left-sidebar.html">offer</a>
                                             </li>
-                                            <li class="li"><a class="single-link" href="login.html">Services
-                                                    Login</a></li>
+                                            <!-- <li class="li"><a class="single-link" href="login.html"></a></li> -->
                                         </ul>
                                     </div>
                                 </div>
@@ -1768,10 +1821,10 @@
                                 <h4 class="footer-herading">Contact Info</h4>
                                 <div class="footer-links">
                                     <!-- News letter area -->
-                                    <p class="address">Address: Noida Sector-12</p>
+                                    <p class="address">Address:New Delhi</p>
 
                                     <p class="mail">Email:<a href="mailto:info@smartphonecollection.com">
-                                            info@smartphonecollection.com</a>
+                                            eatharva@.com</a>
                                     </p>
                                     <!-- News letter area  End -->
                                 </div>
