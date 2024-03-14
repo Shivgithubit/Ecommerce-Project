@@ -24,8 +24,8 @@
     <!-- Style CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
     <script src="https://kit.fontawesome.com/4cbca90a22.js" crossorigin="anonymous"></script>
-    
-  
+
+
     <!-- Minify Version -->
 
     <style>
@@ -34,6 +34,76 @@
             width: 60%;
             margin-left: 25%;
             margin-top: -95px;
+        }
+
+        /* Ensure form elements are responsive */
+        @media (max-width: 767px) {
+            .form-group {
+                margin-bottom: 15px;
+            }
+        }
+
+        /* Adjust input width for small screens */
+        @media (max-width: 767px) {
+            .form-control {
+                width: 100%;
+            }
+        }
+
+        /* Adjust textarea width for small screens */
+        @media (max-width: 767px) {
+            .textarea {
+                width: 100%;
+            }
+        }
+
+        /* Center submit button text */
+        .send-text {
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        /* Adjust button width for small screens */
+        @media (max-width: 767px) {
+            .send-button {
+                width: 100%;
+            }
+
+            .contact-wrapper {
+                /* margin-left: -230px; */
+                width: 100%;
+
+            }
+
+            .contact-title>h2 {
+                width: 300px;
+                font-size: 20px !important;
+            }
+
+            .contact-form .contact-title .title {
+                font-size: 48px;
+                color: #000;
+                font-weight: 500;
+                margin: 27px;
+                line-height: 1;
+                margin-left: -12px;
+                /* border-bottom: 2px solid #f58013; */
+                text-align: left;
+            }
+
+            .contact-list .list-item i {
+                font-size: 20px;
+            }
+
+            .fa-map-marker {
+                font-size: 20px !important;
+
+            }
+
+            .social-media-list .contact-icon i{
+                font-size: 20px;
+            }
+
         }
     </style>
 
@@ -154,8 +224,7 @@
                             <li class="dropdown"><a href="index.html">Home</a>
                             </li>
                             <li><a href="about.html">About</a></li>
-                            <li class="dropdown position-static"><a href="shop-left-sidebar-1.html">Shop <i
-                                        ></i></a>
+                            <li class="dropdown position-static"><a href="shop-left-sidebar-1.html">Shop <i></i></a>
                                 <!-- <ul class="mega-menu d-block">
                                     <li class="d-flex">
                                         <ul class="d-block">
@@ -207,7 +276,7 @@
     <div class="offcanvas-overlay"></div>
     <!-- offcanvas overlay end -->
     <!-- OffCanvas Wishlist Start -->
-     <div id="offcanvas-wishlist" class="offcanvas offcanvas-wishlist"> 
+    <div id="offcanvas-wishlist" class="offcanvas offcanvas-wishlist">
         <div class="inner">
             <div class="head">
                 <span class="title">Wishlist</span>
@@ -243,23 +312,23 @@
                         </div>
                     </li>
                 </ul> -->
-            </div>
-            <div class="foot">
-                <div class="buttons">
-                    <a href="wishlist.html" class="btn btn-dark btn-hover-primary mt-30px">view wishlist</a>
-                </div>
+        </div>
+        <div class="foot">
+            <div class="buttons">
+                <a href="wishlist.html" class="btn btn-dark btn-hover-primary mt-30px">view wishlist</a>
             </div>
         </div>
-    </div> 
-    <!-- OffCanvas Wishlist End -->
-    <!-- OffCanvas Cart Start -->
-     <div id="offcanvas-cart" class="offcanvas offcanvas-cart"> 
-        <div class="inner">
-            <div class="head">
-                <span class="title">Cart</span>
-                <button class="offcanvas-close">×</button>
-            </div>
-            <!-- <div class="body customScroll">
+    </div>
+</div>
+<!-- OffCanvas Wishlist End -->
+<!-- OffCanvas Cart Start -->
+<div id="offcanvas-cart" class="offcanvas offcanvas-cart">
+    <div class="inner">
+        <div class="head">
+            <span class="title">Cart</span>
+            <button class="offcanvas-close">×</button>
+        </div>
+        <!-- <div class="body customScroll">
                 <ul class="minicart-product-list">
                     <li>
                         <a href="single-product.html" class="image"><img src="assets/images/new/1.png"
@@ -295,192 +364,193 @@
                     <a href="cart.html" class="btn btn-dark btn-hover-primary mb-30px">view cart</a>
                     <a href="checkout.html" class="btn btn-outline-dark current-btn">checkout</a>
                 </div> -->
-            </div>
-        </div>
-    </div> 
-    <!-- OffCanvas Cart End -->
-    <!-- OffCanvas Menu Start -->
-    <div id="offcanvas-mobile-menu" class="offcanvas offcanvas-mobile-menu">
-        <button class="offcanvas-close"></button>
-        <div class="user-panel">
-            <ul>
+    </div>
+</div>
+</div>
+<!-- OffCanvas Cart End -->
+<!-- OffCanvas Menu Start -->
+<div id="offcanvas-mobile-menu" class="offcanvas offcanvas-mobile-menu">
+    <button class="offcanvas-close"></button>
+    <div class="user-panel">
+        <ul>
 
-                <li><a href="mailto:info@ecommerce.com"><i class="fa fa-envelope-o"></i>
-                        info@ecommerce.com</a></li>
-                <li><a href="my-account.html"><i class="fa fa-user"></i> Account</a></li>
+            <li><a href="mailto:info@ecommerce.com"><i class="fa fa-envelope-o"></i>
+                    info@ecommerce.com</a></li>
+            <li><a href="my-account.html"><i class="fa fa-user"></i> Account</a></li>
+        </ul>
+    </div>
+    <div class="inner customScroll">
+        <div class="offcanvas-menu mb-4">
+            <ul>
+                <li><a href="index.html"><span class="menu-text">Home</span></a>
+                </li>
+                <li><a href="about.html">About</a></li>
+
+                <li><a href="#"><span class="menu-text">Shop</span></a>
+                    <ul class="sub-menu">
+                        <li>
+                            <a href="#"><span class="menu-text">Shop Page</span></a>
+                            <ul class="sub-menu">
+                                <li><a href="shop-left-sidebar.html">Shop Left Sidebar</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#"><span class="menu-text">product Details Page</span></a>
+                            <ul class="sub-menu">
+                                <li><a href="single-product.html">Product Single</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#"><span class="menu-text">Single Product Page</span></a>
+                            <ul class="sub-menu">
+
+                                <li><a href="cart.html">Cart Page</a></li>
+                                <li><a href="wishlist.html">Wishlist Page</a></li>
+                                <li><a href="my-account.html">Account Page</a></li>
+                                <li><a href="login.html">Login & Register Page</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="contact.html">Contact Us</a></li>
             </ul>
         </div>
-        <div class="inner customScroll">
-            <div class="offcanvas-menu mb-4">
-                <ul>
-                    <li><a href="index.html"><span class="menu-text">Home</span></a>
-                    </li>
-                    <li><a href="about.html">About</a></li>
-
-                    <li><a href="#"><span class="menu-text">Shop</span></a>
-                        <ul class="sub-menu">
-                            <li>
-                                <a href="#"><span class="menu-text">Shop Page</span></a>
-                                <ul class="sub-menu">
-                                    <li><a href="shop-left-sidebar.html">Shop Left Sidebar</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="#"><span class="menu-text">product Details Page</span></a>
-                                <ul class="sub-menu">
-                                    <li><a href="single-product.html">Product Single</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="#"><span class="menu-text">Single Product Page</span></a>
-                                <ul class="sub-menu">
-
-                                    <li><a href="cart.html">Cart Page</a></li>
-                                    <li><a href="wishlist.html">Wishlist Page</a></li>
-                                    <li><a href="my-account.html">Account Page</a></li>
-                                    <li><a href="login.html">Login & Register Page</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                    <li><a href="contact.html">Contact Us</a></li>
+        <!-- OffCanvas Menu End -->
+        <div class="offcanvas-social mt-auto">
+            <ul>
+                <li>
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-google"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-youtube"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-instagram"></i></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- OffCanvas Menu End -->
+<!-- OffCanvas Menu End -->
+<!-- breadcrumb-area start -->
+<div class="breadcrumb-area">
+    <div class="container">
+        <div class="row align-items-center justify-content-center">
+            <div class="col-12 text-center">
+                <h2 class="breadcrumb-title">Contact Us</h2>
+                <!-- breadcrumb-list start -->
+                <ul class="breadcrumb-list">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item active">Contact</li>
                 </ul>
-            </div>
-            <!-- OffCanvas Menu End -->
-            <div class="offcanvas-social mt-auto">
-                <ul>
-                    <li>
-                        <a href="#"><i class="fa fa-facebook"></i></a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fa fa-twitter"></i></a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fa fa-google"></i></a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fa fa-youtube"></i></a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fa fa-instagram"></i></a>
-                    </li>
-                </ul>
+                <!-- breadcrumb-list end -->
             </div>
         </div>
     </div>
-    <!-- OffCanvas Menu End -->
-    <!-- OffCanvas Menu End -->
-    <!-- breadcrumb-area start -->
-    <div class="breadcrumb-area">
-        <div class="container">
-            <div class="row align-items-center justify-content-center">
-                <div class="col-12 text-center">
-                    <h2 class="breadcrumb-title">Contact Us</h2>
-                    <!-- breadcrumb-list start -->
-                    <ul class="breadcrumb-list">
-                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                        <li class="breadcrumb-item active">Contact</li>
-                    </ul>
-                    <!-- breadcrumb-list end -->
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- breadcrumb-area end -->
-    <!-- Contact Area Start -->
-    <div class="contact-area">
-        <div class="container">
-            <div class="contact-wrapper">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="contact-form">
-                            <div class="contact-title mb-30">
-                                <h2 class="title">Reach Out and Let's Connect</h2>
-                            </div>
-                            <div class="contact-wrapper">
+</div>
+<!-- breadcrumb-area end -->
+<!-- Contact Area Start -->
+<div class="contact-area">
+    <div class="container">
+        <div class="contact-wrapper">
+            <div class="row">
+                <div class="col-12">
+                    <div class="contact-form">
+                        <div class="contact-title mb-30">
+                            <h2 class="title">Reach Out and Let's Connect</h2>
+                        </div>
+                        <div class="contact-wrapper">
 
-                                <!-- Left contact page -->
+                            <!-- Left contact page -->
 
-                                <form id="contact-form" class="form-horizontal" role="form">
+                            <form id="contact-form" class="form-horizontal" role="form">
 
-                                    <div class="form-group">
-                                        <div class="col-sm-12">
-                                            <input type="text" class="form-control" id="name"
-                                                placeholder="Name" name="name" value="" required>
-                                        </div>
+                                <div class="form-group">
+                                    <div class="col-sm-12">
+                                        <input type="text" class="form-control" id="name" placeholder="Name" name="name"
+                                            value="" required>
                                     </div>
-
-                                    <div class="form-group">
-                                        <div class="col-sm-12">
-                                            <input type="email" class="form-control" id="email"
-                                                placeholder="Email" name="email" value="" required>
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <div class="col-sm-12">
-                                            <input type="tel" class="form-control" id="email"
-                                                placeholder="Contact no." name="email" value="" required>
-                                        </div>
-                                    </div>
-
-                                    <textarea class="form-control textarea" rows="10"
-                                        placeholder="Send message" name="message" required></textarea>
-
-                                    <button class="btn btn-primary send-button" id="submit" type="submit" value="SEND">
-                                        <div class="alt-send-button">
-                                            <span class="send-text">Submit </span>
-                                        </div>
-
-                                    </button>
-
-                                </form>
-                                <!-- =================================================================== -->
-
-                                <div class="direct-contact-container">
-
-                                    <ul class="contact-list">
-                                        <li class="list-item"> <i class="fa fa-map-marker icon" aria-hidden="true"></i>
-
-                                            <span  class="contact-text place">India, Noida</span></i></li>
-                                               
-
-                                        <li class="list-item"><i class="fa fa-phone fa-2x icon"><span
-                                                    class="contact-text phone"><a href="tel:1-212-555-5555"
-                                                        title="Give me a call">+91 00000000000</a></span></i></li>
-
-                                        <li class="list-item"><i class="fa fa-envelope fa-2x icon"><span
-                                                    class="contact-text gmail"><a href="mailto:#"
-                                                        title="Send me an email">atharva@gmail.com</a></span></i></li>
-
-                                    </ul>
-
-                                    <hr>
-                                    <ul class="social-media-list">
-                                        <li><a href="#" target="_blank" class="contact-icon">
-                                            <i class="fa-brands fa-facebook-f"></i></a>
-                                        </li>
-                                        <li><a href="#" target="_blank" class="contact-icon">
-                                            <i class="fa-brands fa-telegram"></i></a>
-                                        </li>
-                                        <li><a href="#" target="_blank" class="contact-icon">
-                                                <i class="fa fa-twitter" aria-hidden="true"></i></a>
-                                        </li>
-                                        <li><a href="#" target="_blank" class="contact-icon">
-                                                <i class="fa fa-instagram" aria-hidden="true"></i></a>
-                                        </li>
-                                    </ul>
-                                    <hr>
-
-                                    <div class="copyright">&copy; ALL OF THE RIGHTS RESERVED</div>
-
                                 </div>
 
+                                <div class="form-group">
+                                    <div class="col-sm-12">
+                                        <input type="email" class="form-control" id="email" placeholder="Email"
+                                            name="email" value="" required>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-sm-12">
+                                        <input type="tel" class="form-control" id="email" placeholder="Contact no."
+                                            name="email" value="" required>
+                                    </div>
+                                </div>
+
+                                <textarea class="form-control textarea" rows="10" placeholder="Send message"
+                                    name="message" required></textarea>
+
+                                <button class="btn btn-primary send-button" id="submit" type="submit" value="SEND">
+                                    <div class="alt-send-button">
+                                        <span class="send-text">Submit </span>
+                                    </div>
+
+                                </button>
+
+                            </form>
+                            <!-- =================================================================== -->
+
+                            <div class="direct-contact-container">
+
+                                <ul class="contact-list">
+                                    <li class="list-item"> <i class="fa fa-map-marker icon" aria-hidden="true"></i>
+
+                                        <span class="contact-text place">India, Noida</span></i>
+                                    </li>
+
+
+                                    <li class="list-item"><i class="fa fa-phone fa-2x icon"><span
+                                                class="contact-text phone"><a href="tel:1-212-555-5555"
+                                                    title="Give me a call">+91 00000000000</a></span></i></li>
+
+                                    <li class="list-item"><i class="fa fa-envelope fa-2x icon"><span
+                                                class="contact-text gmail"><a href="mailto:#"
+                                                    title="Send me an email">atharva@gmail.com</a></span></i></li>
+
+                                </ul>
+
+                                <hr>
+                                <ul class="social-media-list">
+                                    <li><a href="#" target="_blank" class="contact-icon">
+                                            <i class="fa-brands fa-facebook-f"></i></a>
+                                    </li>
+                                    <li><a href="#" target="_blank" class="contact-icon">
+                                            <i class="fa-brands fa-telegram"></i></a>
+                                    </li>
+                                    <li><a href="#" target="_blank" class="contact-icon">
+                                            <i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                    </li>
+                                    <li><a href="#" target="_blank" class="contact-icon">
+                                            <i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                    </li>
+                                </ul>
+                                <hr>
+
+                                <div class="copyright">&copy; ALL OF THE RIGHTS RESERVED</div>
+
                             </div>
 
-                            <p class="form-messege"></p>
                         </div>
+
+                        <p class="form-messege"></p>
                     </div>
-                    <!-- <div class="col-12">
+                </div>
+                <!-- <div class="col-12">
                         <div class="contact-info">
                             <div class="single-contact">
                                 <div class="icon-box">
@@ -501,7 +571,7 @@
                                         <p><a href="tel:0123456789">+012 345 67 89</a></p>
                                     </div>
                                 </div> -->
-                            <!-- <div class="single-contact m-0">
+                <!-- <div class="single-contact m-0">
                                 <div class="icon-box">
                                     <img src="assets/images/icons/contact-3.png" alt="">
                                 </div>
@@ -510,15 +580,15 @@
                                     <p><a href="mailto:info@ecommerce.com">info@ecommerce.com</a></p>
                                 </div>
                             </div> -->
-                        </div>
-                    </div> 
-                </div>
             </div>
         </div>
     </div>
-    <!-- Contact Area End -->
-    <!-- map Area Start -->
-    <!-- <div class="contact-map">
+</div>
+</div>
+</div>
+<!-- Contact Area End -->
+<!-- map Area Start -->
+<!-- <div class="contact-map">
             <div id="mapid">
                 <div class="mapouter">
                     <div class="gmap_canvas">
@@ -528,121 +598,121 @@
                 </div>
             </div>
         </div> -->
-    <!-- map Area End -->
-    <!-- Footer Area Start -->
-    <div class="footer-area">
-        <div class="footer-container">
-            <div class="footer-top">
-                <div class="container">
-                    <div class="row">
-                        <!-- Start single blog -->
-                        <div class="col-md-6 col-lg-3 mb-md-30px mb-lm-30px">
-                            <div class="single-wedge">
-                                <div class="footer-logo">
-                                    <a href="index.html"><img src="assets/images/logo/Atharva-removebg-preview.png"
-                                            alt=""></a>
-                                </div>
-                                <p class="about-text">SmartPhoneCollection
-                                </p>
-                                <ul class="link-follow">
-                                    <li>
-                                        <a class="m-0" title="Twitter" target="_blank" rel="noopener noreferrer"
-                                            href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                                    </li>
-                                    <li>
-                                        <a title="Tumblr" target="_blank" rel="noopener noreferrer" href="#"><i
-                                                class="fa fa-tumblr" aria-hidden="true"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a title="Facebook" target="_blank" rel="noopener noreferrer" href="#"><i
-                                                class="fa fa-twitter" aria-hidden="true"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a title="Instagram" target="_blank" rel="noopener noreferrer" href="#"><i
-                                                class="fa fa-instagram" aria-hidden="true"></i>
-                                        </a>
-                                    </li>
-                                </ul>
+<!-- map Area End -->
+<!-- Footer Area Start -->
+<div class="footer-area">
+    <div class="footer-container">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <!-- Start single blog -->
+                    <div class="col-md-6 col-lg-3 mb-md-30px mb-lm-30px">
+                        <div class="single-wedge">
+                            <div class="footer-logo">
+                                <a href="index.html"><img src="assets/images/logo/Atharva-removebg-preview.png"
+                                        alt=""></a>
                             </div>
+                            <p class="about-text">SmartPhoneCollection
+                            </p>
+                            <ul class="link-follow">
+                                <li>
+                                    <a class="m-0" title="Twitter" target="_blank" rel="noopener noreferrer" href="#"><i
+                                            class="fa fa-facebook" aria-hidden="true"></i></a>
+                                </li>
+                                <li>
+                                    <a title="Tumblr" target="_blank" rel="noopener noreferrer" href="#"><i
+                                            class="fa fa-tumblr" aria-hidden="true"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a title="Facebook" target="_blank" rel="noopener noreferrer" href="#"><i
+                                            class="fa fa-twitter" aria-hidden="true"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a title="Instagram" target="_blank" rel="noopener noreferrer" href="#"><i
+                                            class="fa fa-instagram" aria-hidden="true"></i>
+                                    </a>
+                                </li>
+                            </ul>
                         </div>
-                        <!-- End single blog -->
-                        <!-- Start single blog -->
-                        <div class="col-md-6 col-lg-3 col-sm-6 mb-lm-30px pl-lg-60px">
-                            <div class="single-wedge">
-                                <h4 class="footer-herading">Services</h4>
-                                <div class="footer-links">
-                                    <div class="footer-row">
-                                        <ul class="align-items-center">
-                                            <li class="li"><a class="single-link" href="my-account.html">My
-                                                    Account</a></li>
-                                            <li class="li"><a class="single-link" href="contact.html">Contact</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- End single blog -->
-                        <!-- Start single blog -->
-                        <div class="col-md-6 col-lg-3 col-sm-6 mb-lm-30px pl-lg-40px">
-                            <div class="single-wedge">
-                                <div class="footer-links">
-                                    <div class="footer-row">
-                                        <h4 class="footer-herading">Important Links</h4>
-                                        <ul class="align-items-center">
-                                            <li class="li"><a class="single-link" href="cart.html">Shopping cart</a>
-                                            </li>
-                                            <li class="li"><a class="single-link" href="shop-left-sidebar.html">Shop</a>
-                                            </li>
-                                            <li class="li"><a class="single-link" href="login.html">Services
-                                                    Login</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- End single blog -->
-                        <!-- Start single blog -->
-                        <div class="col-md-6 col-lg-3 col-sm-12">
-                            <div class="single-wedge">
-                                <h4 class="footer-herading">Contact Info</h4>
-                                <div class="footer-links">
-                                    <!-- News letter area -->
-                                    <p class="address">Address: Noida Sector-12</p>
-
-                                    <p class="mail">Email:<a href="mailto:info@ecommerce.com"> info@ecommerce.com</a>
-                                    </p>
-                                    <!-- News letter area  End -->
-                                </div>
-                            </div>
-                        </div>
-                        <!-- End single blog -->
                     </div>
+                    <!-- End single blog -->
+                    <!-- Start single blog -->
+                    <div class="col-md-6 col-lg-3 col-sm-6 mb-lm-30px pl-lg-60px">
+                        <div class="single-wedge">
+                            <h4 class="footer-herading">Services</h4>
+                            <div class="footer-links">
+                                <div class="footer-row">
+                                    <ul class="align-items-center">
+                                        <li class="li"><a class="single-link" href="my-account.html">My
+                                                Account</a></li>
+                                        <li class="li"><a class="single-link" href="contact.html">Contact</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End single blog -->
+                    <!-- Start single blog -->
+                    <div class="col-md-6 col-lg-3 col-sm-6 mb-lm-30px pl-lg-40px">
+                        <div class="single-wedge">
+                            <div class="footer-links">
+                                <div class="footer-row">
+                                    <h4 class="footer-herading">Important Links</h4>
+                                    <ul class="align-items-center">
+                                        <li class="li"><a class="single-link" href="cart.html">Shopping cart</a>
+                                        </li>
+                                        <li class="li"><a class="single-link" href="shop-left-sidebar.html">Shop</a>
+                                        </li>
+                                        <li class="li"><a class="single-link" href="login.html">Services
+                                                Login</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End single blog -->
+                    <!-- Start single blog -->
+                    <div class="col-md-6 col-lg-3 col-sm-12">
+                        <div class="single-wedge">
+                            <h4 class="footer-herading">Contact Info</h4>
+                            <div class="footer-links">
+                                <!-- News letter area -->
+                                <p class="address">Address: Noida Sector-12</p>
+
+                                <p class="mail">Email:<a href="mailto:info@ecommerce.com"> info@ecommerce.com</a>
+                                </p>
+                                <!-- News letter area  End -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End single blog -->
                 </div>
             </div>
-            <div class="footer-bottom">
-                <div class="container">
-                    <div class="line-shape-top line-height-1">
-                        <div class="row flex-md-row-reverse align-items-center">
-                            <div class="col-md-6 text-center text-md-end">
-                                <div class="payment-mth"><a href="#"><img class="img img-fluid"
-                                            src="assets/images/icons/payment.png" alt="payment-image"></a></div>
-                            </div>
-                            <div class="col-md-6 text-center text-md-start">
-                                <p class="copy-text"> © 2024 <strong>smartphonecollection</strong> Made With <i
-                                        class="fa fa-heart" aria-hidden="true"></i> By
-                                    <strong> Atharva</strong>
-                                </p>
-                            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="line-shape-top line-height-1">
+                    <div class="row flex-md-row-reverse align-items-center">
+                        <div class="col-md-6 text-center text-md-end">
+                            <div class="payment-mth"><a href="#"><img class="img img-fluid"
+                                        src="assets/images/icons/payment.png" alt="payment-image"></a></div>
+                        </div>
+                        <div class="col-md-6 text-center text-md-start">
+                            <p class="copy-text"> © 2024 <strong>smartphonecollection</strong> Made With <i
+                                    class="fa fa-heart" aria-hidden="true"></i> By
+                                <strong> Atharva</strong>
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Footer Area End -->
+</div>
+<!-- Footer Area End -->
 </div>
 <!-- Global Vendor, plugins JS -->
 <!-- JS Files

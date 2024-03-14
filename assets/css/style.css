@@ -6785,7 +6785,7 @@ only screen and (max-width: 767px) {
 @media only screen and (max-width: 767px) {
   .promo-video {
     margin-top: 60px;
-    border: 2px solid red;
+    /* border: 2px solid red; */
   }
 
 }
@@ -11531,8 +11531,63 @@ hr {
     line-height: 26px;
   }
 
-  .team-image img{
+  .team-image img {
     height: 200px;
     width: auto;
   }
+
+  .mission-heading,
+  .ourVision {
+    /* margin-left: 50px; */
+    text-align: center;
+  }
+
+  .list-item-2,
+  .list-item-1 {
+    margin-left: 20px;
+  }
+
+  .list-item-1,
+  .list-item-2 li {
+    text-align: justify;
+  }
+
+  .team-image img {
+    height: 400px !important;
+    width: 700px !important;
+  }
+
+  .about-area .container {
+    /* height:1000px; */
+    background: none;
+  }
+
+  .promo-video {
+    height: 2000px;
+  }
+
+  .visionimg img {
+    height: 300px;
+  }
+
+  .secImg {
+    height: 300px !important;
+    width: 300px !important;
+  }
+
+  .promo-video {
+    height: 1460px !important;
+  }
+
+  .mission {
+    margin-top: -100px;
+  }
+
+  .team-area {
+    margin-top: -300px;
+  }
+  .team-image img{
+    padding: 63px 55px 0px 31px;
+  }
+
 }
