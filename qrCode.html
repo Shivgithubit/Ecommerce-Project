@@ -1,36 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .center{
+        .center {
             display: flex;
             justify-content: center;
             align-items: center;
             /* height: 60%; */
-            width: auto;
+            /* width: 68vh; */
             /* width: 100vh; */
+            /* height: 100vh; */
         }
-        .img{
+
+        .img {
             height: 60%;
         }
 
-        @media screen  and (max-width:"768px"){
-             .img{
-                height: 100px;
+        @media screen and (max-width:600px) {
+            .Qr {
                 width: 100%;
-             }
-
-        }
+                height: auto;
+            }
     </style>
 </head>
 
 <body>
     <div class="center">
-        <img src="imgs/QrPage.jpg" alt="">
+        <img class="Qr" src="imgs/QrPage.jpg" alt="">
     </div>
-    
+
 </body>
+
 </html>
