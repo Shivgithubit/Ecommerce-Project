@@ -351,7 +351,8 @@
                                 <!-- <div class="text"><a href="#">Forgot password?</a></div> -->
 
                                 <div class="button input-box">
-                                    <button><a href="/qrCode.html">Submit</a></button>
+                                   
+                                    <button id="submitButton" type="submit"> <a href="">Submit</a></button>
                                 </div>
 
                                 <!-- <div class="text sign-up-text">Don't have an account? <label for="flip">Sigup now</label></div> -->
@@ -365,5 +366,42 @@
     </section>
 
 </body>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        // Get form and button elements
+        var form = document.getElementById("registrationForm");
+        var submitButton = document.getElementById("submitButton");
+
+        // Add event listener for form submission
+        form.addEventListener("submit", function (event) {
+            // Prevent default form submission
+            event.preventDefault();
+            
+            // Perform validation
+            if (validateForm()) {
+                // If validation passes, allow the form submission
+                form.submit();
+            } else {
+                // If validation fails, do not allow the form submission
+                console.log("Validation failed. Please fill in all required fields.");
+            }
+        });
+
+        // Function to validate form
+        function validateForm() {
+            var name = form.elements["name"].value;
+            var phone = form.elements["phone"].value;
+            var email = form.elements["email"].value;
+            var address = form.elements["address"].value;
+
+            // Basic validation, you can add more complex validation as needed
+            if (name.trim() === "" || phone.trim() === "" || email.trim() === "" || address.trim() === "") {
+                return false;
+            }
+
+            return true;
+        }
+    });
+</script>
 
 </html>
