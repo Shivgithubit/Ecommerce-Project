@@ -22,7 +22,7 @@
             width: auto;
             /* background: linear-gradient(white, cyan); */
             background-color: #4158D0;
-            background-image: linear-gradient(45deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+            background-image: linear-gradient(white,cyan);
 
             /* h: 100vh; */
             font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -64,10 +64,12 @@
         .image-container {
             /* margin-top: ; */
             height: 100vh;
-            width: 42%;
+            /* width: 42%; */
             /* margin-left: 200px; */
-            margin-bottom: 10%;
+            /* margin-bottom: 10%; */
             /* padding-bottom: 400px; */
+
+
         }
 
         img {
@@ -95,7 +97,9 @@
             cursor: pointer;
             font-weight: bolder;
             font-size: 26px;
-            margin-top: 52px;
+            /* margin-left: 120px; */
+
+
 
         }
 
@@ -208,18 +212,35 @@
                 margin-left: 0;
             }
         }
+
+        .QrImage {
+            height: 200px;
+            margin-left: 200px;
+            margin-top: 52px;
+        }
+
+        .image-qr {
+            display: flex;
+            flex-direction: column;
+            gap: -20px;
+            margin-top: 150px;
+            margin-right: 10px;
+        }
+        .code{
+            margin-left: -82px;
+        }
     </style>
 </head>
 
 <body>
     <div class="container">
         <div class="offer-image">
-            <img src="/assets/images/blog-image/Holi-PNG-Label-Design.png" alt="">
+            <!-- <img src="/assets/images/blog-image/Holi-PNG-Label-Design.png" alt=""> -->
         </div>
 
         <div class="content">
             <h4 class="Apple"><i class="fa-brands fa-apple"></i> Apple</h4>
-            <h1>Buy iPhone 15 Pro<br>just <span style="color:rgba(244, 5, 5, 0.988); font-size:50px;">Rs 99 </span>/-
+            <h1>Buy iPhone 15 Pro<br>just <span style="font-size:50px; color:#FFCC70;">Rs 99 </span>/-
             </h1>
             <p class="para-content">
                 A16 Bionic powers all kinds of advanced features. Like computational photography used for 24 MP photos
@@ -248,11 +269,19 @@
                 you need exceptional graphics performance. Dynamic Island bubbles up alerts and Live Notifications.
                 Plus, with Always-On display, your Lock Screen stays glanceable, so you don’t have to tap it to stay in
                 the know..</p> -->
-            <a href="registred.html"><button class="button">Buy Now</button></a>
+
         </div>
         <div class="image-container">
             <!-- Replace the URL with the actual image URL -->
-            <img src="../assets/images/iphone/appleOffer.png" alt="Image">
+            <div class="image-qr">
+                <a><button class="button">Scan & Pay</button></a>
+                <div class="code">
+                    <img class="QrImage" src="assets/images/banner/Qrimage.jpeg" alt="Image">
+                </div>
+                
+            </div>
+
+
         </div>
     </div>
 

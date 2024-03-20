@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+
+        .container {
+            height: 100vh;
+            /* width: 100vh; */
+            background: url(assets/images/banner/backgroundimg.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .full {
+            width: 337px;
+        }
+
+
+        form input {
+            margin-bottom: 10px;
+            /* padding: 10px; */
+            height: 40px;
+            border: none;
+            /* background-color: black; */
+            padding-left: 10px;
+            box-shadow: 1px 1px 1px 1px #fff;
+        }
+
+        .form-detail {
+            width: 336px;
+            margin-top: 102px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-evenly;
+
+        }
+
+        .img {
+            width: 336px;
+            height: 200px;
+
+        }
+
+        button {
+            padding: 10px;
+            /* margin-left: 40%; */
+            width: 100%;
+            background: linear-gradient(45deg, rgb(240, 57, 179), purple, blue);
+            border: none;
+        }
+
+        .phone {
+            font-size: 40px;
+            background: -webkit-linear-gradient(rgb(188, 12, 241), rgb(212, 4, 4));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="form">
+            <div class="form-detail">
+                <h1 class="phone">iPhone 15 Pro</h1>
+            </div>
+            <form action="">
+                <input type="text" placeholder="First Name">
+                <input type="text" placeholder="Last Name"><br>
+                <input class="full" type="text" placeholder="Email"><br>
+                <input type="text" placeholder="Pin Code">
+                <input type="text" placeholder="Phone"><br>
+                <input class="full" type="text" placeholder="Full Address"><br>
+                <button>submit</button>
+            </form>
+        </div>
+        <div class="img" style="border: 5px solid red;">
+
+        </div>
+    </div>
+</body>
+
+</html>
