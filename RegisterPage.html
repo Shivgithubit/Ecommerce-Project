@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://kit.fontawesome.com/4cbca90a22.js" crossorigin="anonymous"></script>
     <style>
         * {
             box-sizing: border-box;
@@ -52,20 +53,72 @@
 
         }
 
-        button {
+        .button {
             padding: 10px;
-            /* margin-left: 40%; */
-            width: 100%;
+            margin-left: 0px;
+            width: 21%;
             background: linear-gradient(45deg, rgb(240, 57, 179), purple, blue);
             border: none;
+            cursor: pointer;
         }
+
 
         .phone {
             font-size: 40px;
             background: -webkit-linear-gradient(rgb(188, 12, 241), rgb(212, 4, 4));
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            margin-bottom: 10px;
+            margin-bottom: -2px;
+            display: inline-block;
+        }
+
+        p {
+            /* padding: 20px; */
+            padding-right: 20px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            color: #fff;
+        }
+
+        .fa-apple {
+            color: white;
+            font-size: 40px;
+        }
+
+        .img2 {
+            height: 700px;
+            margin-top: -140px;
+        }
+
+
+
+        @media screen and (max-width:786px) {
+            .container {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .action {
+                margin-left: 20px;
+            }
+
+            button {
+                width: 340px;
+            }
+
+            .img2 {
+                height: 694px;
+
+                margin-top: -199px;
+
+            }
+            .fa-apple{
+                margin-left: 43px;
+
+            }
+            .para{
+                margin-left: 54px;
+            }
         }
     </style>
 </head>
@@ -74,20 +127,23 @@
     <div class="container">
         <div class="form">
             <div class="form-detail">
+                <i class="fa-brands fa-apple"></i>
                 <h1 class="phone">iPhone 15 Pro</h1>
+                <p class="para">Where should we send your new iphone.</p>
             </div>
-            <form action="">
-                <input type="text" placeholder="First Name">
-                <input type="text" placeholder="Last Name"><br>
-                <input class="full" type="text" placeholder="Email"><br>
-                <input type="text" placeholder="Pin Code">
-                <input type="text" placeholder="Phone"><br>
-                <input class="full" type="text" placeholder="Full Address"><br>
-                <button>submit</button>
+            <form action="#" class="action">
+                <input type="text" placeholder="First Name" required>
+                <input type="text" placeholder="Last Name" required><br>
+                <input class="full" type="Email" placeholder="Email" required><br>
+                <input type="tel" placeholder="Pin Code" required>
+                <input type="tel" placeholder="Phone" required><br>
+                <input class="full" type="text" placeholder="Full Address" required><br>
+                <button class="button"><a href="offer.html" style="color: white;">Submit</a></button>
+
             </form>
         </div>
-        <div class="img" style="border: 5px solid red;">
-
+        <div class="imgCont">
+            <img class="img2" src="imgs/iphone2-removebg-preview.png" alt="">
         </div>
     </div>
 </body>
