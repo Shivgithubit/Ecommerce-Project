@@ -22,7 +22,7 @@
             width: auto;
             /* background: linear-gradient(white, cyan); */
             background-color: #4158D0;
-            background-image: linear-gradient(white,cyan);
+            background-image: linear-gradient(white, cyan);
 
             /* h: 100vh; */
             font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -90,17 +90,15 @@
         }
 
         .button {
-            padding: 22px;
-            width: 411px;
+            padding: 6px;
+            width: 325px;
             background: linear-gradient(Blue, aqua);
             border-radius: 32px;
             cursor: pointer;
             font-weight: bolder;
             font-size: 26px;
-            /* margin-left: 120px; */
-
-
-
+            margin-left: 120px;
+            margin-left: 55px;
         }
 
         .click:hover {
@@ -185,6 +183,20 @@
             .content {
                 width: 100%;
                 padding: 20px;
+                margin-bottom: -140px;
+            }
+
+
+
+            .QrImage {
+                height: 200px;
+                margin-left: 173px !important;
+                margin-top: 52px;
+
+            }
+
+            .pay {
+                margin-left: 10px !important;
             }
 
             .image-container {
@@ -205,12 +217,14 @@
 
             .button {
                 width: 100%;
+                margin-left: 6px;
             }
 
             .list-item-1,
             .list-item-2 {
                 margin-left: 0;
             }
+
         }
 
         .QrImage {
@@ -226,8 +240,13 @@
             margin-top: 150px;
             margin-right: 10px;
         }
-        .code{
+
+        .code {
             margin-left: -82px;
+        }
+
+        .pay {
+            margin-left: 102px;
         }
     </style>
 </head>
@@ -240,7 +259,7 @@
 
         <div class="content">
             <h4 class="Apple"><i class="fa-brands fa-apple"></i> Apple</h4>
-            <h1>Buy iPhone 15 Pro<br>just <span style="font-size:50px; color:#FFCC70;">Rs 99 </span>/-
+            <h1>Buy iPhone 15 Pro<br>just <span style="font-size:50px; color:red;">Rs 99 </span>/-
             </h1>
             <p class="para-content">
                 A16 Bionic powers all kinds of advanced features. Like computational photography used for 24 MP photos
@@ -248,7 +267,7 @@
             <div class="icon">
 
                 <ul class="list-item-1">
-                    <li><i class="fa-solid fa-mobile"></i> D 17.00 cm (6.7″) </li>
+                    <li><i class="fa-solid fa-mobile"></i> D 17.00 cm</li>
                     <li class="newicon"><i class="fa-solid fa-chalkboard-user"></i> <span>A17 Pro chip</span>
                     </li>
                     <li><i class="fa-solid fa-camera"></i> Dual Camera</li>
@@ -258,7 +277,7 @@
 
 
                 <ul class="list-item-2">
-                    <li><i class="fa-solid fa-mobile"></i> 17.00 cm (6.7″) </li>
+                    <li><i class="fa-solid fa-mobile"></i> 17.00 cm</li>
                     <li><i class="fa-solid fa-chalkboard-user"></i> Pro chip</li>
                     <li><i class="fa-solid fa-camera"></i> Dual Camera</li>
                 </ul>
@@ -274,11 +293,11 @@
         <div class="image-container">
             <!-- Replace the URL with the actual image URL -->
             <div class="image-qr">
-                <a><button class="button">Scan & Pay</button></a>
+                <h1 class="pay">Scan & Pay</h1>
                 <div class="code">
                     <img class="QrImage" src="assets/images/banner/Qrimage.jpeg" alt="Image">
                 </div>
-                
+
             </div>
 
 
