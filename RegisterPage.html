@@ -6,6 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://kit.fontawesome.com/4cbca90a22.js" crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init({
+                publicKey: "K0Sy-r3saNjCobZDO",
+            });
+        })();
+    </script>
+
+
+
     <style>
         * {
             box-sizing: border-box;
@@ -14,7 +27,7 @@
         }
 
         .container {
-            height: 100vh;
+            /* height: ; */
             /* width: 100vh; */
             background: url(assets/images/banner/backgroundimg.png);
             background-repeat: no-repeat;
@@ -22,7 +35,7 @@
         }
 
         .full {
-            width: 337px;
+            width: 349px;
         }
 
 
@@ -44,6 +57,7 @@
         .container {
             display: flex;
             justify-content: space-evenly;
+            height: 100vh;
 
         }
 
@@ -86,16 +100,17 @@
         }
 
         .img2 {
-            height: 700px;
-            margin-top: -140px;
+            height: 345px;
+            margin-top: 70px;
         }
-
 
 
         @media screen and (max-width:786px) {
             .container {
                 display: flex;
                 flex-direction: column;
+                height: 1000px;
+
             }
 
             .action {
@@ -107,17 +122,45 @@
             }
 
             .img2 {
-                height: 694px;
-
-                margin-top: -199px;
-
-            }
-            .fa-apple{
-                margin-left: 43px;
+                height: 318px;
+                margin-top: 49px;
+                margin-left: 90px;
 
             }
-            .para{
+
+            .fa-apple {
+                margin-left: 20px;
+
+            }
+
+            .para {
                 margin-left: 54px;
+            }
+        }
+
+        @media screen and (min-width:320px) and (max-width:375px) {
+            .full {
+                /* width: 50px; */
+                width: 172px;
+            }
+
+            .fa-apple {
+                margin-left: 20px;
+            }
+
+            .para {
+                margin-left: 18px;
+            }
+
+        }
+
+        @media screen and (min-width:290px) and (max-width:320px) {
+            .full {
+                width: 171px;
+            }
+
+            .container {
+                width: 118vw;
             }
         }
     </style>
@@ -132,20 +175,49 @@
                 <p class="para">Where should we send your new iphone.</p>
             </div>
             <form action="#" class="action">
-                <input type="text" placeholder="First Name" required>
-                <input type="text" placeholder="Last Name" required><br>
-                <input class="full" type="Email" placeholder="Email" required><br>
-                <input type="tel" placeholder="Pin Code" required>
-                <input type="tel" placeholder="Phone" required><br>
-                <input class="full" type="text" placeholder="Full Address" required><br>
-                <button class="button"><a href="offer.html" style="color: white;">Submit</a></button>
-
+                <input class="First" type="text" placeholder="First Name" required>
+                <input class="Last" type="text" placeholder="Last Name" required><br>
+                <input class="mail" class="full" type="Email" placeholder="Email" required><br>
+                <input class="Pin" type="text" placeholder="Pin Code" required>
+                <input class="Phone" type="text" placeholder="Phone" required><br>
+                <input class="Address full" type="text" placeholder="Full Address" required><br>
+                <button class="button"><a href="https://paymentgate-41jq.onrender.com/pay" style="color: white;"
+                        onclick="sendMail()">Submit</a></button>
             </form>
         </div>
         <div class="imgCont">
-            <img class="img2" src="imgs/iphone2-removebg-preview.png" alt="">
+            <img class="img2" src="imgs/iphone2-removebg-preview-1.png" alt="">
         </div>
     </div>
 </body>
 
 </html>
+
+<script>
+    function sendMail() {
+        var params = {
+            name: document.querySelectorAll(".First")[0].value,
+            last: document.querySelector('.Last').value,
+            mail: document.querySelector('mail').value,
+            Phone: document.querySelector('.Phone').value,
+            Address: querySelector('.Address').value,
+        }
+
+        const serviceID = "service_ahilzt8";
+        const templateID = 'template_optyzje';
+
+        emailjs.sendMail(serviceID, templateID).then(
+            res => {
+                name: document.querySelectorAll(".First")[0].value = ''
+                last: document.querySelector('.Last').value = ''
+                mail: document.querySelector('mail').value = ''
+                Phone: document.querySelector('.Phone').value = ''
+                Address: querySelector('.Address').value = ''
+                console.log(res)
+                alert('messege sent succesfully')
+            }
+        )
+    }
+
+
+</script>
