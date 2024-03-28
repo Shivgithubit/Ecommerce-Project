@@ -9,16 +9,6 @@
 
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
     </script>
-    <script type="text/javascript">
-        (function () {
-            emailjs.init({
-                publicKey: "K0Sy-r3saNjCobZDO",
-            });
-        })();
-    </script>
-
-
-
     <style>
         * {
             box-sizing: border-box;
@@ -27,141 +17,93 @@
         }
 
         .container {
-            /* height: ; */
-            /* width: 100vh; */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
             background: url(assets/images/banner/backgroundimg.png);
             background-repeat: no-repeat;
             background-size: cover;
+            padding: 20px;
         }
 
-        .full {
-            width: 349px;
-        }
-
-
-        form input {
-            margin-bottom: 10px;
-            /* padding: 10px; */
-            height: 40px;
-            border: none;
-            /* background-color: black; */
-            padding-left: 10px;
-            box-shadow: 1px 1px 1px 1px #fff;
+        .form {
+            width: 100%;
+            max-width: 400px;
+            margin-bottom: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
 
         .form-detail {
-            width: 336px;
-            margin-top: 102px;
+            text-align: center;
+            margin-bottom: 20px;
         }
 
-        .container {
-            display: flex;
-            justify-content: space-evenly;
-            height: 100vh;
-
+        .form-detail i {
+            color: #333;
+            font-size: 40px;
         }
-
-        .img {
-            width: 336px;
-            height: 200px;
-
-        }
-
-        .button {
-            padding: 10px;
-            margin-left: 0px;
-            width: 21%;
-            background: linear-gradient(45deg, rgb(240, 57, 179), purple, blue);
-            border: none;
-            cursor: pointer;
-        }
-
 
         .phone {
-            font-size: 40px;
+            font-size: 30px;
             background: -webkit-linear-gradient(rgb(188, 12, 241), rgb(212, 4, 4));
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            margin-bottom: -2px;
-            display: inline-block;
         }
 
-        p {
-            /* padding: 20px; */
-            padding-right: 20px;
-            padding-top: 20px;
-            padding-bottom: 20px;
+        .para {
+            color: #333;
+            margin-top: 10px;
+        }
+
+        form input {
+            width: 100%;
+            margin-bottom: 10px;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .button {
+            width: 20%;
+            padding: 10px;
+            background: linear-gradient(45deg, rgb(240, 57, 179), purple, blue);
+            border: none;
+            border-radius: 5px;
             color: #fff;
+            text-align: center;
+            cursor: pointer;
         }
 
-        .fa-apple {
-            color: white;
-            font-size: 40px;
+        .button a {
+            text-decoration: none;
+            color: inherit;
         }
 
-        .img2 {
-            height: 345px;
-            margin-top: 70px;
+        .imgCont img {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+            border-radius: 10px;
         }
 
-
-        @media screen and (max-width:786px) {
+        @media screen and (min-width: 768px) {
             .container {
-                display: flex;
-                flex-direction: column;
-                height: 1000px;
-
+                flex-direction: row;
+                justify-content: space-around;
+                padding: 40px;
             }
 
-            .action {
+            .form {
+                margin-right: 20px;
+            }
+
+            .imgCont {
                 margin-left: 20px;
             }
 
-            button {
-                width: 340px;
-            }
-
-            .img2 {
-                height: 318px;
-                margin-top: 49px;
-                margin-left: 90px;
-
-            }
-
-            .fa-apple {
-                margin-left: 20px;
-
-            }
-
-            .para {
-                margin-left: 54px;
-            }
-        }
-
-        @media screen and (min-width:320px) and (max-width:375px) {
-            .full {
-                /* width: 50px; */
-                width: 172px;
-            }
-
-            .fa-apple {
-                margin-left: 20px;
-            }
-
-            .para {
-                margin-left: 18px;
-            }
-
-        }
-
-        @media screen and (min-width:290px) and (max-width:320px) {
-            .full {
-                width: 171px;
-            }
-
-            .container {
-                width: 118vw;
-            }
         }
     </style>
 </head>
@@ -172,52 +114,69 @@
             <div class="form-detail">
                 <i class="fa-brands fa-apple"></i>
                 <h1 class="phone">iPhone 15 Pro</h1>
-                <p class="para">Where should we send your new iphone.</p>
+                <p class="para">Where should we send your new iPhone?</p>
             </div>
             <form action="#" class="action">
                 <input class="First" type="text" placeholder="First Name" required>
-                <input class="Last" type="text" placeholder="Last Name" required><br>
-                <input class="mail" class="full" type="Email" placeholder="Email" required><br>
+                <input class="Last" type="text" placeholder="Last Name" required>
+                <input class="mail full" type="email" placeholder="Email" required>
                 <input class="Pin" type="text" placeholder="Pin Code" required>
-                <input class="Phone" type="text" placeholder="Phone" required><br>
-                <input class="Address full" type="text" placeholder="Full Address" required><br>
-                <button class="button"><a href="https://paymentgate-41jq.onrender.com/pay" style="color: white;"
-                        onclick="sendMail()">Submit</a></button>
+                <input class="Phone" type="tel" placeholder="Phone" required>
+                <input class="Address full" type="text" placeholder="Full Address" required>
+                <button class="button" onclick='emailSend()''><a href="https://paymentgate-41jq.onrender.com/pay" style="color: white;" >Submit</a></button>
+                
             </form>
         </div>
         <div class="imgCont">
             <img class="img2" src="imgs/iphone2-removebg-preview-1.png" alt="">
         </div>
     </div>
+
+
+
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
+
+
+    <script>
+        function emailSend() {
+            
+
+
+            let Name = document.getElementsByClassName('First')[0].value;
+            // let Name2 = document.getElementsByClassName('Last')[0].value;
+            let email = document.getElementsByClassName('mail')[0].value;
+            // let pin = document.getElementsByClassName('Pin')[0].value;
+            let address = document.getElementsByClassName('Address')[0].value;
+            var messageBody = "Name" + Name +
+                "<br/> Email " + email +
+                "<br/> Address" + address;
+                console.log(messageBody)
+
+
+
+            Email.send({
+                Host: "smtp.elasticemail.com",
+                Username: "ankitswetashukla8884@gmail.com",
+                Password: "A5FC19F5C1DCCFE65D225F96D624DCD5FDEA",
+                To: 'ankitswetashukla8884@gmail.com',
+                From: "ankitswetashukla8884@gmail.com",
+                Subject: "This is the subject",
+                Body: messageBody
+            }).then(
+                message => {
+                    if (message == 'OK') {
+                        alert("Sucessful", "You clicked the button!", "success");
+                    }
+                    else {
+                        alert("Error", "You clicked the button!", "error");
+                    }
+                }
+            );
+        }
+
+       
+    </script>
 </body>
 
 </html>
-
-<script>
-    function sendMail() {
-        var params = {
-            name: document.querySelectorAll(".First")[0].value,
-            last: document.querySelector('.Last').value,
-            mail: document.querySelector('mail').value,
-            Phone: document.querySelector('.Phone').value,
-            Address: querySelector('.Address').value,
-        }
-
-        const serviceID = "service_ahilzt8";
-        const templateID = 'template_optyzje';
-
-        emailjs.sendMail(serviceID, templateID).then(
-            res => {
-                name: document.querySelectorAll(".First")[0].value = ''
-                last: document.querySelector('.Last').value = ''
-                mail: document.querySelector('mail').value = ''
-                Phone: document.querySelector('.Phone').value = ''
-                Address: querySelector('.Address').value = ''
-                console.log(res)
-                alert('messege sent succesfully')
-            }
-        )
-    }
-
-
-</script>
