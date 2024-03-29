@@ -140,9 +140,6 @@
 
     <script>
         function emailSend() {
-            
-
-
             let Name = document.getElementsByClassName('First')[0].value;
             // let Name2 = document.getElementsByClassName('Last')[0].value;
             let email = document.getElementsByClassName('mail')[0].value;
@@ -154,7 +151,7 @@
                 console.log(messageBody)
 
 
-
+                
             Email.send({
                 Host: "smtp.elasticemail.com",
                 Username: "ankitswetashukla8884@gmail.com",
@@ -174,8 +171,7 @@
                 }
             );
         }
-
-       
+ 
     </script>
 </body>
 
