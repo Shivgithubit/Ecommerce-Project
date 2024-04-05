@@ -703,6 +703,7 @@
                                     </div>
                                     <div class="actions">
                                         <button title="Add To Cart" class="action add-to-cart" data-bs-toggle="modal"
+                                        onclick="addToCart('Apple iPhone 11', '₹43,900', '/assets/images/iphone/iphone-11-4.webp')"
                                             data-bs-target="#exampleModal-Cart"><i class="pe-7s-shopbag"></i></button>
                                         <button class="action wishlist" title="Wishlist" data-bs-toggle="modal"
                                             data-bs-target="#exampleModal-Wishlist"><i class="pe-7s-like"></i></button>
@@ -1337,6 +1338,53 @@
             s1.setAttribute('crossorigin', '*');
             s0.parentNode.insertBefore(s1, s0);
         })();
+        function addToCart(itemName, itemPrice, itemImage) {
+            // Retrieve the cart from localStorage or initialize an empty cart
+            var cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+            // Add the item to the cart
+            cart.push({ name: itemName, price: itemPrice, image: itemImage });
+
+            // Save the updated cart back to localStorage
+            localStorage.setItem('cart', JSON.stringify(cart));
+
+            // Update the cart display
+            updateCartDisplay();
+
+            // Alert the user that the item has been added to the cart
+            alert('Item added to cart!');
+        }
+
+        function updateCartDisplay() {
+            // Retrieve the cart from localStorage
+            var cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+            // Get the cart element
+            var cartElement = document.getElementById('cart');
+
+            // Clear existing content
+            cartElement.innerHTML = '';
+
+            // Add new content for each item in the cart
+            if (cart.length === 0) {
+                cartElement.innerHTML = '<p>Your cart is empty</p>';
+            } else {
+                var cartList = document.createElement('ul');
+                cart.forEach(function (item) {
+                    var listItem = document.createElement('li');
+                    var image = document.createElement('img');
+                    image.src = item.image;
+                    listItem.appendChild(image);
+                    listItem.textContent += item.name + ' - $' + item.price;
+                    cartList.appendChild(listItem);
+                    listItem.innerHTML += `<button id="buyButton">Buy Now</button>`
+                });
+                cartElement.appendChild(cartList);
+            }
+        }
+
+        // Call updateCartDisplay when the page loads to initialize the cart display
+        window.onload = updateCartDisplay;   
     </script>
     <!--End of Tawk.to Script-->
 

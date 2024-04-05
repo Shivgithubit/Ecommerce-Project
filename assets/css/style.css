@@ -11591,3 +11591,24 @@ hr {
   }
 
 }
+
+.cart button {
+  background-color: #4CAF50;
+  /* Green */
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  margin-top: 5px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-left: 5px;
+}
+
+.cart button:hover {
+  background-color: #45a049;
+  /* Darker Green */
+}
