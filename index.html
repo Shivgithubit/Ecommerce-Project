@@ -26,7 +26,7 @@
     <!-- Minify Version -->
     <!-- <link rel="stylesheet" href="assets/css/plugins.min.css">
     <link rel="stylesheet" href="assets/css/style.min.css"> -->
-
+    <script src="product.js"></script>
     <style>
         .hero-slide-image {
             margin-top: -20pc;
@@ -130,14 +130,19 @@
                 line-height: 1.5 !important;
             }
 
-
         }
+
+       
     </style>
 
     <!-- ===================================================banner css end=========================== -->
 </head>
 
 <body>
+    <!-- <div class="cart">
+        <h2>Your Cart</h2>
+        <div id="cart"></div>
+    </div> -->
     <div class="main-wrapper">
         <header>
             <!-- Header top area start -->
@@ -326,7 +331,9 @@
                                 <span class="quantity-price">1 x <span class="amount">$223.22</span></span>
                                 <a href="#" class="remove">×</a>
                             </div> -->
+
                         </li>
+
                         <li>
                             <!-- <a href="single-product.html" class="image"><img src="assets/images/new/2.png"
                                     alt="Cart product Image"></a>
@@ -362,9 +369,13 @@
                     <span class="title">Cart</span>
                     <button class="offcanvas-close">×</button>
                 </div>
+
+
+                <!-- <div class="total">0.0</div> -->
+
                 <div class="body customScroll">
                     <ul class="minicart-product-list">
-                        <li>
+                        <li class="li">
                             <!-- <a href="single-product.html" class="image"><img src="assets/images/new/1.png"
                                     alt="Cart product Image"></a>
                             <div class="content">
@@ -372,6 +383,9 @@
                                 <span class="quantity-price">1 x <span class="amount">$18.86</span></span>
                                 <a href="#" class="remove">×</a>
                             </div> -->
+                            <div class="cart">
+                                <div id="cart"></div>
+                            </div>
                         </li>
                         <li>
                             <!-- <a href="single-product.html" class="image"><img src="assets/images/new/2.png"
@@ -570,7 +584,7 @@
                                             <span class="category"><a
                                                     href="/Single Product/Redmi-Note-11pro.html">Brand:REDMI</a></span>
                                             <h5 class="title"><a href="/Single Product/Redmi-Note-11pro.html">
-                                                    (Refurbished) Redmi Note 11 Pro + 5G
+                                                    Redmi Note 11 Pro + 5G
                                                 </a>
                                             </h5>
                                             <span class="price">
@@ -579,8 +593,12 @@
                                             </span>
                                         </div>
                                         <div class="actions">
-                                            <button title="Add To Cart" class="action add-to-cart"
-                                                data-bs-toggle="modal" data-bs-target="#exampleModal-Cart"><i
+
+                                            <!-- cart action -->
+                                            <button
+                                                onclick="addToCart('Redmi Note 11 Pro + 5G', '₹15,150', '/assets/images/Redmi/Redmi-Note_11Pro.jpg')"
+                                                title="Add To Cart" class="action add-to-cart" data-bs-toggle="modal"
+                                                data-bs-target="#exampleModal-Cart"><i
                                                     class="pe-7s-shopbag"></i></button>
                                             <button class="action wishlist" title="Wishlist" data-bs-toggle="modal"
                                                 data-bs-target="#exampleModal-Wishlist"><i
@@ -662,7 +680,7 @@
                                             </span>
                                         </div>
                                         <div class="actions">
-                                            <button title="Add To Cart" class="action add-to-cart"
+                                            <button  onclick="addToCart('Oppo n2 flip', ' ₹59,488', '/assets/images/oppo/oppo-N2flip.jpg')" title="Add To Cart" class="action add-to-cart"
                                                 data-bs-toggle="modal" data-bs-target="#exampleModal-Cart"><i
                                                     class="pe-7s-shopbag"></i></button>
                                             <button class="action wishlist" title="Wishlist" data-bs-toggle="modal"
@@ -703,7 +721,7 @@
                                             </span>
                                         </div>
                                         <div class="actions">
-                                            <button title="Add To Cart" class="action add-to-cart"
+                                            <button  onclick="addToCart('  Samsung Galaxy S21 FE 5G', ' ₹33,890 ', '/assets/images/samsung/sam-galaxy-S21FE.jpg')"  title="Add To Cart" class="action add-to-cart"
                                                 data-bs-toggle="modal" data-bs-target="#exampleModal-Cart"><i
                                                     class="pe-7s-shopbag"></i></button>
                                             <button class="action wishlist" title="Wishlist" data-bs-toggle="modal"
@@ -743,7 +761,7 @@
                                             </span>
                                         </div>
                                         <div class="actions">
-                                            <button title="Add To Cart" class="action add-to-cart"
+                                            <button onclick="addToCart('realme narzo 60', '₹14,999 ', '/assets/images/samsung/sam-galaxy-Zfold4.jpg')"   title="Add To Cart" class="action add-to-cart"
                                                 data-bs-toggle="modal" data-bs-target="#exampleModal-Cart"><i
                                                     class="pe-7s-shopbag"></i></button>
                                             <button class="action wishlist" title="Wishlist" data-bs-toggle="modal"
@@ -786,7 +804,7 @@
                                             </span>
                                         </div>
                                         <div class="actions">
-                                            <button title="Add To Cart" class="action add-to-cart"
+                                            <button onclick="addToCart('realme narzo 60', '₹14,999 ', '/assets/images/samsung/sam-galaxy-Zfold4.jpg')" title="Add To Cart" class="action add-to-cart"
                                                 data-bs-toggle="modal" data-bs-target="#exampleModal-Cart"><i
                                                     class="pe-7s-shopbag"></i></button>
                                             <button class="action wishlist" title="Wishlist" data-bs-toggle="modal"
@@ -830,7 +848,7 @@
                                         </div>
                                         <div class="actions">
                                             <button title="Add To Cart" class="action add-to-cart"
-                                                data-bs-toggle="modal" data-bs-target="#exampleModal-Cart"><i
+                                            onclick="addToCart(' Samsung Galaxy S23', '₹1,30,999 ', '/assets/images/samsung/Sam-galaxy-S23-Ultra.jpg')"   data-bs-toggle="modal" data-bs-target="#exampleModal-Cart"><i
                                                     class="pe-7s-shopbag"></i></button>
                                             <button class="action wishlist" title="Wishlist" data-bs-toggle="modal"
                                                 data-bs-target="#exampleModal-Wishlist"><i
@@ -872,7 +890,7 @@
                                         </div>
                                         <div class="actions">
                                             <button title="Add To Cart" class="action add-to-cart"
-                                                data-bs-toggle="modal" data-bs-target="#exampleModal-Cart"><i
+                                            onclick="addToCart('Apple iPhone 13', ' ₹66,405 ', '/assets/images/iphone/iphone-13.jpg')"  data-bs-toggle="modal" data-bs-target="#exampleModal-Cart"><i
                                                     class="pe-7s-shopbag"></i></button>
                                             <button class="action wishlist" title="Wishlist" data-bs-toggle="modal"
                                                 data-bs-target="#exampleModal-Wishlist"><i
@@ -918,7 +936,7 @@
                                         </div>
                                         <div class="actions">
                                             <button title="Add To Cart" class="action add-to-cart"
-                                                data-bs-toggle="modal" data-bs-target="#exampleModal-Cart"><i
+                                            onclick="addToCart('Apple iPhone 13', ' ₹52,999 ', '/assets/images/iphone/iphone-13-1.jpg')"  data-bs-toggle="modal" data-bs-target="#exampleModal-Cart"><i
                                                     class="pe-7s-shopbag"></i></button>
                                             <button class="action wishlist" title="Wishlist" data-bs-toggle="modal"
                                                 data-bs-target="#exampleModal-Wishlist"><i
@@ -957,7 +975,7 @@
                                         </div>
                                         <div class="actions">
                                             <button title="Add To Cart" class="action add-to-cart"
-                                                data-bs-toggle="modal" data-bs-target="#exampleModal-Cart"><i
+                                            onclick="addToCart('Iphone 15', ' ₹72,9999 ', 'assets/images/iphone/iphone-15-1.jpg')"     data-bs-toggle="modal" data-bs-target="#exampleModal-Cart"><i
                                                     class="pe-7s-shopbag"></i></button>
                                             <button class="action wishlist" title="Wishlist" data-bs-toggle="modal"
                                                 data-bs-target="#exampleModal-Wishlist"><i
@@ -1001,6 +1019,7 @@
                                         </div>
                                         <div class="actions">
                                             <button title="Add To Cart" class="action add-to-cart"
+                                            onclick="addToCart('samsung sam-galaxy-S21FE', ' ₹30,790', './assets/images/samsung/sam-galaxy-S21FE.jpg')"
                                                 data-bs-toggle="modal" data-bs-target="#exampleModal-Cart"><i
                                                     class="pe-7s-shopbag"></i></button>
                                             <button class="action wishlist" title="Wishlist" data-bs-toggle="modal"
@@ -1040,6 +1059,7 @@
                                         </div>
                                         <div class="actions">
                                             <button title="Add To Cart" class="action add-to-cart"
+                                            onclick="addToCart('OPPO n2 flip', '₹74,990', 'assets/images/oppo/Oppo-N2-flip-1.webp')"
                                                 data-bs-toggle="modal" data-bs-target="#exampleModal-Cart"><i
                                                     class="pe-7s-shopbag"></i></button>
                                             <button class="action wishlist" title="Wishlist" data-bs-toggle="modal"
@@ -1077,7 +1097,8 @@
                                             </span>
                                         </div>
                                         <div class="actions">
-                                            <button title="Add To Cart" class="action add-to-cart"
+                                            <button title="Add To Cart" class="action add-to-cart" 
+                                            onclick="addToCart('OPPO n2 flip', '₹74,990', 'assets/images/oppo/Oppo-N2-flip-1.webp')"
                                                 data-bs-toggle="modal" data-bs-target="#exampleModal-Cart"><i
                                                     class="pe-7s-shopbag"></i></button>
                                             <button class="action wishlist" title="Wishlist" data-bs-toggle="modal"
@@ -1118,6 +1139,7 @@
                                         </div>
                                         <div class="actions">
                                             <button title="Add To Cart" class="action add-to-cart"
+                                            onclick="addToCart('Oppo reno 8', '₹38,999', 'assets/images/oppo/Oppo-N2-flip-1.webp')"
                                                 data-bs-toggle="modal" data-bs-target="#exampleModal-Cart"><i
                                                     class="pe-7s-shopbag"></i></button>
                                             <button class="action wishlist" title="Wishlist" data-bs-toggle="modal"
@@ -1986,8 +2008,7 @@
                                         <input class="cart-plus-minus-box" type="text" name="qtybutton" value="1" />
                                     </div>
                                     <div class="pro-details-cart">
-                                        <button class="add-cart"> Add To neha
-                                            Cart</button>
+                                        <button class="add-cart"> </button>
                                     </div>
                                     <div class="pro-details-compare-wishlist pro-details-wishlist ">
                                         <a href="wishlist.html"><i class="pe-7s-like"></i></a>
@@ -2043,7 +2064,14 @@
                 </div>
             </div>
         </div>
-    </div> -->
+
+    </div>
+
+
+    <!-- Cart section -->
+
+ 
+
     <!-- Modal compare -->
 
 
@@ -2065,6 +2093,73 @@
 
 
     <!--Start of Tawk.to Script-->
+
+    <script type="text/javascript">
+        var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+        (function () {
+            var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+            s1.async = true;
+            s1.src = 'https://embed.tawk.to/65704fa1bfb79148e59a9f22/1hgvbe4ge';
+            s1.charset = 'UTF-8';
+            s1.setAttribute('crossorigin', '*');
+            s0.parentNode.insertBefore(s1, s0);
+        })();
+
+
+        function addToCart(itemName, itemPrice, itemImage) {
+            // Retrieve the cart from localStorage or initialize an empty cart
+            var cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+            // Add the item to the cart
+            cart.push({ name: itemName, price: itemPrice, image: itemImage });
+
+            // Save the updated cart back to localStorage
+            localStorage.setItem('cart', JSON.stringify(cart));
+
+            // Update the cart display
+            updateCartDisplay();
+
+            // Alert the user that the item has been added to the cart
+            alert('Item added to cart!');
+        }
+
+        function updateCartDisplay() {
+            // Retrieve the cart from localStorage
+            var cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+            // Get the cart element
+            var cartElement = document.getElementById('cart');
+
+            // Clear existing content
+            cartElement.innerHTML = '';
+
+            // Add new content for each item in the cart
+            if (cart.length === 0) {
+                cartElement.innerHTML = '<p>Your cart is empty</p>';
+            } else {
+                var cartList = document.createElement('ul');
+                cart.forEach(function (item) {
+                    var listItem = document.createElement('li');
+                    var image = document.createElement('img');
+                    image.src = item.image;
+                    listItem.appendChild(image);
+                    listItem.textContent += item.name + ' - $' + item.price;
+                    cartList.appendChild(listItem);
+                    listItem.innerHTML += `<button onclick=messege() id="buyButton">Buy Now</button>`
+                });
+                cartElement.appendChild(cartList);
+            }
+        }
+
+       function messege(){
+        alert('out of stock')
+       }
+
+        // Call updateCartDisplay when the page loads to initialize the cart display
+        window.onload = updateCartDisplay;
+    </script>
+
+    </script>
    <!--Start of Tawk.to Script-->
 <script type="text/javascript">
 var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
@@ -2115,20 +2210,31 @@ s0.parentNode.insertBefore(s1,s0);
             clearInterval(slideTimer);
         }
 
-        document.querySelector('.next').addEventListener('click', () => {
-            stopSlideShow();
-            nextSlide();
-            startSlideShow();
-        });
 
-        document.querySelector('.prev').addEventListener('click', () => {
-            stopSlideShow();
-            currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
-            showSlide(currentIndex);
-            startSlideShow();
-        });
+
+
+
+
+
+
+
+        // document.querySelector('.next').addEventListener('click', () => {
+        //     stopSlideShow();
+        //     nextSlide();
+        //     startSlideShow();
+        // });
+
+        // document.querySelector('.prev').addEventListener('click', () => {
+        //     stopSlideShow();
+        //     currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+        //     showSlide(currentIndex);
+        //     startSlideShow();
+        // });
 
         startSlideShow();
+
+
+
     </script>
     <!-- ============================Banner Script end================= -->
 </body>

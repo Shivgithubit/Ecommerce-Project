@@ -278,34 +278,41 @@
                     <span class="title">Cart</span>
                     <button class="offcanvas-close">×</button>
                 </div>
+
+
+                <!-- <div class="total">0.0</div> -->
+
                 <div class="body customScroll">
                     <ul class="minicart-product-list">
-                        <li>
-                            <a href="single-product.html" class="image"><img src="assets/images/product-image/1.webp"
+                        <li class="li">
+                            <!-- <a href="single-product.html" class="image"><img src="assets/images/new/1.png"
                                     alt="Cart product Image"></a>
                             <div class="content">
                                 <a href="single-product.html" class="title">Modern Smart Phone</a>
                                 <span class="quantity-price">1 x <span class="amount">$18.86</span></span>
                                 <a href="#" class="remove">×</a>
+                            </div> -->
+                            <div class="cart">
+                                <div id="cart"></div>
                             </div>
                         </li>
                         <li>
-                            <a href="single-product.html" class="image"><img src="assets/images/product-image/2.webp"
+                            <!-- <a href="single-product.html" class="image"><img src="assets/images/new/2.png"
                                     alt="Cart product Image"></a>
                             <div class="content">
                                 <a href="single-product.html" class="title">Bluetooth Headphone</a>
                                 <span class="quantity-price">1 x <span class="amount">$43.28</span></span>
                                 <a href="#" class="remove">×</a>
-                            </div>
+                            </div> -->
                         </li>
                         <li>
-                            <a href="single-product.html" class="image"><img src="assets/images/product-image/3.webp"
+                            <!-- <a href="single-product.html" class="image"><img src="assets/images/new/4.png"
                                     alt="Cart product Image"></a>
                             <div class="content">
                                 <a href="single-product.html" class="title">Smart Music Box</a>
                                 <span class="quantity-price">1 x <span class="amount">$37.34</span></span>
                                 <a href="#" class="remove">×</a>
-                            </div>
+                            </div> -->
                         </li>
                     </ul>
                 </div>
@@ -484,6 +491,7 @@
                                                         </div>
                                                         <div class="actions">
                                                             <button title="Add To Cart" class="action add-to-cart"
+                                                                onclick="addToCart('SAMSUNG  Galaxy F54 5G', '₹23,180', 'assets/images/samsung/Sam-GalaxyF54-1.jpg')"
                                                                 data-bs-toggle="modal"
                                                                 data-bs-target="#exampleModal-Cart"><i
                                                                     class="pe-7s-shopbag"></i></button>
@@ -533,6 +541,7 @@
                                                         </div>
                                                         <div class="actions">
                                                             <button title="Add To Cart" class="action add-to-cart"
+                                                                onclick="addToCart('oppo/Oppo-Reno-11', '₹23,180', 'assets/images/samsung/Sam-GalaxyF54-1.jpg')"
                                                                 data-bs-toggle="modal"
                                                                 data-bs-target="#exampleModal-Cart"><i
                                                                     class="pe-7s-shopbag"></i></button>
@@ -583,6 +592,7 @@
                                                         </div>
                                                         <div class="actions">
                                                             <button title="Add To Cart" class="action add-to-cart"
+                                                                onclick="addToCart('samsung                                                           zflip', '₹98,490', 'assets/images/samsung/zflip4.jpg')"
                                                                 data-bs-toggle="modal"
                                                                 data-bs-target="#exampleModal-Cart"><i
                                                                     class="pe-7s-shopbag"></i></button>
@@ -628,6 +638,7 @@
                                                         </div>
                                                         <div class="actions">
                                                             <button title="Add To Cart" class="action add-to-cart"
+                                                                onclick="addToCart('samsung-z-fold4', '₹109,999', 'assets/images/samsung/galaxy-z-fold4_1.webp')"
                                                                 data-bs-toggle="modal"
                                                                 data-bs-target="#exampleModal-Cart"><i
                                                                     class="pe-7s-shopbag"></i></button>
@@ -677,6 +688,7 @@
                                                         </div>
                                                         <div class="actions">
                                                             <button title="Add To Cart" class="action add-to-cart"
+                                                                onclick="addToCart('samsung s23 ultra', '₹56,699', 'assets/images/samsung/SamsungGalaxyS23Ultra.avif')"
                                                                 data-bs-toggle="modal"
                                                                 data-bs-target="#exampleModal-Cart"><i
                                                                     class="pe-7s-shopbag"></i></button>
@@ -724,6 +736,7 @@
                                                         </div>
                                                         <div class="actions">
                                                             <button title="Add To Cart" class="action add-to-cart"
+                                                            onclick="addToCart('Samsung Zflip', '₹46,999', 'assets/images/samsung/zflip3.jpg')"
                                                                 data-bs-toggle="modal"
                                                                 data-bs-target="#exampleModal-Cart"><i
                                                                     class="pe-7s-shopbag"></i></button>
@@ -772,6 +785,7 @@
                                                         </div>
                                                         <div class="actions">
                                                             <button title="Add To Cart" class="action add-to-cart"
+                                                                onclick="addToCart('iphone 14 pro', '₹32,990', 'assets/images/iphone/iphone-14.webp')"
                                                                 data-bs-toggle="modal"
                                                                 data-bs-target="#exampleModal-Cart"><i
                                                                     class="pe-7s-shopbag"></i></button>
@@ -823,6 +837,7 @@
                                                         </div>
                                                         <div class="actions">
                                                             <button title="Add To Cart" class="action add-to-cart"
+                                                            onclick="addToCart('iphone 14 pro', '₹21,059.10', 'assets/images/iphone/iphone-14plus-1.jpg')"
                                                                 data-bs-toggle="modal"
                                                                 data-bs-target="#exampleModal-Cart"><i
                                                                     class="pe-7s-shopbag"></i></button>
@@ -870,6 +885,7 @@
                                                         </div>
                                                         <div class="actions">
                                                             <button title="Add To Cart" class="action add-to-cart"
+                                                            onclick="addToCart('oppo-N2flip', '₹21,059.10', 'assets/images/oppo/oppo-N2flip.jpg')"
                                                                 data-bs-toggle="modal"
                                                                 data-bs-target="#exampleModal-Cart"><i
                                                                     class="pe-7s-shopbag"></i></button>
@@ -918,6 +934,7 @@
                                                         </div>
                                                         <div class="actions">
                                                             <button title="Add To Cart" class="action add-to-cart"
+                                                            onclick="addToCart('iphone-13', '₹51790.00', 'assets/images/iphone/iphone-13.jpg')"
                                                                 data-bs-toggle="modal"
                                                                 data-bs-target="#exampleModal-Cart"><i
                                                                     class="pe-7s-shopbag"></i></button>
@@ -966,6 +983,7 @@
                                                         </div>
                                                         <div class="actions">
                                                             <button title="Add To Cart" class="action add-to-cart"
+                                                            onclick="addToCart('Vivo-V21e', '₹25,191.2', 'assets/images/vivo/Vivo-V21e.jpg')"
                                                                 data-bs-toggle="modal"
                                                                 data-bs-target="#exampleModal-Cart"><i
                                                                     class="pe-7s-shopbag"></i></button>
@@ -1014,6 +1032,7 @@
                                                         </div>
                                                         <div class="actions">
                                                             <button title="Add To Cart" class="action add-to-cart"
+                                                            onclick="addToCart('Samsung-galaxy-S21FE', '₹28,499', 'assets/images/samsung/sam-galaxy-S21FE.jpg')"
                                                                 data-bs-toggle="modal"
                                                                 data-bs-target="#exampleModal-Cart"><i
                                                                     class="pe-7s-shopbag"></i></button>
@@ -1065,6 +1084,7 @@
                                                             </div>
                                                             <div class="actions">
                                                                 <button title="Add To Cart" class="action add-to-cart"
+                                                                onclick="addToCart('Samsung-galaxy-S21FE', '₹28,499', 'assets/images/samsung/sam-galaxy-S21FE.jpg')"
                                                                     data-bs-toggle="modal"
                                                                     data-bs-target="#exampleModal-Cart"><i
                                                                         class="pe-7s-shopbag"></i></button>
@@ -1109,6 +1129,7 @@
                                                                 </span>
                                                                 <div class="actions">
                                                                     <button title="Add To Cart"
+                                                                    onclick="addToCart('oppo-Reno-8', '₹38,999', 'assets/images/samsung/sam-galaxy-S21FE.jpg')"
                                                                         class="action add-to-cart"
                                                                         data-bs-toggle="modal"
                                                                         data-bs-target="#exampleModal-Cart"><i
@@ -1208,6 +1229,7 @@
                                                                 </span>
                                                                 <div class="actions">
                                                                     <button title="Add To Cart"
+                                                                    onclick="addToCart('Vivo-V29-5g', '₹27,819', 'assets/images/vivo/vivo-V29-5g.jpg')"
                                                                         class="action add-to-cart"
                                                                         data-bs-toggle="modal"
                                                                         data-bs-target="#exampleModal-Cart"><i
@@ -1303,6 +1325,7 @@
                                                                 </span>
                                                                 <div class="actions">
                                                                     <button title="Add To Cart"
+                                                                    onclick="addToCart('oppo-Reno7', '₹18,699', 'assets/images/oppo/oppo-Reno7.jpg')"
                                                                         class="action add-to-cart"
                                                                         data-bs-toggle="modal"
                                                                         data-bs-target="#exampleModal-Cart"><i
@@ -1356,6 +1379,7 @@
                                                             </div>
                                                             <div class="actions">
                                                                 <button title="Add To Cart" class="action add-to-cart"
+                                                                onclick="addToCart('Sam-galaxy-S23-Ultra', '₹89,990', 'assets/images/samsung/Sam-galaxy-S23-Ultra.jpg')"
                                                                     data-bs-toggle="modal"
                                                                     data-bs-target="#exampleModal-Cart"><i
                                                                         class="pe-7s-shopbag"></i></button>
@@ -1404,6 +1428,7 @@
                                                                 </span>
                                                                 <div class="actions">
                                                                     <button title="Add To Cart"
+                                                                    onclick="addToCart('Sam-galaxy-S23-Ultra', '₹89,990', 'assets/images/samsung/Sam-galaxy-S23-Ultra.jpg')"
                                                                         class="action add-to-cart"
                                                                         data-bs-toggle="modal"
                                                                         data-bs-target="#exampleModal-Cart"><i
@@ -1455,6 +1480,7 @@
                                                             </div>
                                                             <div class="actions">
                                                                 <button title="Add To Cart" class="action add-to-cart"
+                                                                onclick="addToCart('iphone-15-Pro Max', '₹139,999.00', 'assets/images/iphone/iphone-15-proMax.jpg')"
                                                                     data-bs-toggle="modal"
                                                                     data-bs-target="#exampleModal-Cart"><i
                                                                         class="pe-7s-shopbag"></i></button>
@@ -1480,7 +1506,7 @@
                                                                 <span class="category"><a href="#">Brand
                                                                         APPLE(PH)</a></span>
                                                                 <h5 class="title"><a
-                                                                        href="single-product.html">iphone-15-Pro Max</a>
+                                                                        href="single-product.html">iphone- 15-Pro Max</a>
                                                                 </h5>
                                                                 <p>iPhone 15 Pro is the first iPhone to feature an
                                                                     aerospace‑grade titanium design, using the same
@@ -1496,6 +1522,7 @@
                                                                 </span>
                                                                 <div class="actions">
                                                                     <button title="Add To Cart"
+                                                                    onclick="addToCart('iphone-15-Pro Max', '₹139,999.00', 'assets/images/iphone/iphone-15-proMax.jpg')"
                                                                         class="action add-to-cart"
                                                                         data-bs-toggle="modal"
                                                                         data-bs-target="#exampleModal-Cart"><i
@@ -1550,6 +1577,7 @@
                                                             </div>
                                                             <div class="actions">
                                                                 <button title="Add To Cart" class="action add-to-cart"
+                                                                onclick="addToCart('Samsung-Galaxy-Zfold', '₹143,519.08', 'assets/images/samsung/Sam-Galaxy-Zfold.jpg')"
                                                                     data-bs-toggle="modal"
                                                                     data-bs-target="#exampleModal-Cart"><i
                                                                         class="pe-7s-shopbag"></i></button>
@@ -1592,6 +1620,7 @@
                                                                 </span>
                                                                 <div class="actions">
                                                                     <button title="Add To Cart"
+                                                                    onclick="addToCart('Samsung-Galaxy-Zfold', '₹143,519.08', 'assets/images/samsung/Sam-Galaxy-Zfold.jpg')"
                                                                         class="action add-to-cart"
                                                                         data-bs-toggle="modal"
                                                                         data-bs-target="#exampleModal-Cart"><i
@@ -1631,7 +1660,7 @@
                                                                 </a>
                                                             </div>
                                                             <div class="content">
-                                                                <span class="category"><a href="#">Brand: HP</a></span>
+                                                                <span class="category"><a href="#">Brand: VIVO</a></span>
                                                                 <h5 class="title"><a href="single-product.html">vivo-X90
                                                                     </a>
                                                                 </h5>
@@ -1641,6 +1670,7 @@
                                                             </div>
                                                             <div class="actions">
                                                                 <button title="Add To Cart" class="action add-to-cart"
+                                                                onclick="addToCart('vivo-X90', '₹59,999', 'assets/images/vivo/vivo-X90.jpg')"
                                                                     data-bs-toggle="modal"
                                                                     data-bs-target="#exampleModal-Cart"><i
                                                                         class="pe-7s-shopbag"></i></button>
@@ -1680,6 +1710,7 @@
                                                                 </span>
                                                                 <div class="actions">
                                                                     <button title="Add To Cart"
+                                                                    onclick="addToCart('vivo-X90', '₹59,999', 'assets/images/vivo/vivo-X90.jpg')"
                                                                         class="action add-to-cart"
                                                                         data-bs-toggle="modal"
                                                                         data-bs-target="#exampleModal-Cart"><i
@@ -1747,7 +1778,7 @@
                                 </div>
                             </div>
                             <!-- Sidebar single item -->
-                            <div class="sidebar-widget mt-8">
+                            <!-- <div class="sidebar-widget mt-8">
                                 <h4 class="sidebar-title">Price Filter</h4>
                                 <div class="price-filter">
                                     <div class="price-slider-amount">
@@ -1756,7 +1787,7 @@
                                     </div>
                                     <div id="slider-range"></div>
                                 </div>
-                            </div>
+                            </div> -->
                             <!-- Sidebar single item -->
                             <div class="sidebar-widget">
                                 <h4 class="sidebar-title">Color</h4>
@@ -1903,8 +1934,13 @@
                                         <!-- News letter area -->
                                         <p class="address">Address:New Delhi</p>
 
+
+                                        <p class="mail">Email:<a href="mailto:info@smartphonecollection.com">
+                                                eatharva@.com</a>
+
                                         <p class="mail">Email:<a href="mailto:info@atharva96@gmail.com">
                                                 info@atharva96@gmail.com</a>
+
                                         </p>
                                         <!-- News letter area  End -->
                                     </div>
@@ -2163,6 +2199,57 @@
             s1.setAttribute('crossorigin', '*');
             s0.parentNode.insertBefore(s1, s0);
         })();
+        function addToCart(itemName, itemPrice, itemImage) {
+            // Retrieve the cart from localStorage or initialize an empty cart
+            var cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+            // Add the item to the cart
+            cart.push({ name: itemName, price: itemPrice, image: itemImage });
+
+            // Save the updated cart back to localStorage
+            localStorage.setItem('cart', JSON.stringify(cart));
+
+            // Update the cart display
+            updateCartDisplay();
+
+            // Alert the user that the item has been added to the cart
+            alert('Item added to cart!');
+        }
+
+        function updateCartDisplay() {
+            // Retrieve the cart from localStorage
+            var cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+            // Get the cart element
+            var cartElement = document.getElementById('cart');
+
+            // Clear existing content
+            cartElement.innerHTML = '';
+
+            // Add new content for each item in the cart
+            if (cart.length === 0) {
+                cartElement.innerHTML = '<p>Your cart is empty</p>';
+            } else {
+                var cartList = document.createElement('ul');
+                cart.forEach(function (item) {
+                    var listItem = document.createElement('li');
+                    var image = document.createElement('img');
+                    image.src = item.image;
+                    listItem.appendChild(image);
+                    listItem.textContent += item.name + ' - $' + item.price;
+                    cartList.appendChild(listItem);
+                    listItem.innerHTML += `<button onclick=messege() id="buyButton">Buy Now</button>`
+                });
+                cartElement.appendChild(cartList);
+            }
+        }
+
+        function messege(){
+        alert('out of stock')
+       }
+
+        // Call updateCartDisplay when the page loads to initialize the cart display
+        window.onload = updateCartDisplay;
     </script>
     <!--End of Tawk.to Script-->
     <!--End of Tawk.to Script-->
