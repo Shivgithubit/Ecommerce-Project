@@ -239,42 +239,49 @@
                     <span class="title">Cart</span>
                     <button class="offcanvas-close">×</button>
                 </div>
+    
+    
+                <!-- <div class="total">0.0</div> -->
+    
                 <div class="body customScroll">
                     <ul class="minicart-product-list">
-                        <li>
+                        <li class="li">
                             <!-- <a href="single-product.html" class="image"><img src="assets/images/new/1.png"
-                                    alt="Cart product Image"></a>
-                            <div class="content">
-                                <a href="single-product.html" class="title">Modern Smart Phone</a>
-                                <span class="quantity-price">1 x <span class="amount">$18.86</span></span>
-                                <a href="#" class="remove">×</a>
+                                        alt="Cart product Image"></a>
+                                <div class="content">
+                                    <a href="single-product.html" class="title">Modern Smart Phone</a>
+                                    <span class="quantity-price">1 x <span class="amount">$18.86</span></span>
+                                    <a href="#" class="remove">×</a>
+                                </div> -->
+                            <div class="cart">
+                                <div id="cart"></div>
                             </div>
-                        </li> -->
-                        <li>
-                            <!-- <a href="single-product.html" class="image"><img src="assets/images/new/2.png"
-                                    alt="Cart product Image"></a>
-                            <div class="content">
-                                <a href="single-product.html" class="title">Bluetooth Headphone</a>
-                                <span class="quantity-price">1 x <span class="amount">$43.28</span></span>
-                                <a href="#" class="remove">×</a>
-                            </div> -->
                         </li>
                         <li>
-                            <!-- <a href="single-product.html" class="image"><img src="assets/images/new/3.png"
-                                    alt="Cart product Image"></a>
-                            <div class="content">
-                                <a href="single-product.html" class="title">Smart Music Box</a>
-                                <span class="quantity-price">1 x <span class="amount">$37.34</span></span>
-                                <a href="#" class="remove">×</a>
-                            </div> -->
+                            <!-- <a href="single-product.html" class="image"><img src="assets/images/new/2.png"
+                                        alt="Cart product Image"></a>
+                                <div class="content">
+                                    <a href="single-product.html" class="title">Bluetooth Headphone</a>
+                                    <span class="quantity-price">1 x <span class="amount">$43.28</span></span>
+                                    <a href="#" class="remove">×</a>
+                                </div> -->
+                        </li>
+                        <li>
+                            <!-- <a href="single-product.html" class="image"><img src="assets/images/new/4.png"
+                                        alt="Cart product Image"></a>
+                                <div class="content">
+                                    <a href="single-product.html" class="title">Smart Music Box</a>
+                                    <span class="quantity-price">1 x <span class="amount">$37.34</span></span>
+                                    <a href="#" class="remove">×</a>
+                                </div> -->
                         </li>
                     </ul>
                 </div>
                 <div class="foot">
-                    <!-- <div class="buttons mt-30px">
+                    <div class="buttons mt-30px">
                         <a href="cart.html" class="btn btn-dark btn-hover-primary mb-30px">view cart</a>
                         <a href="checkout.html" class="btn btn-outline-dark current-btn">checkout</a>
-                    </div> -->
+                    </div>
                 </div>
             </div>
         </div>
@@ -498,7 +505,8 @@
                                     <input class="cart-plus-minus-box" type="text" name="qtybutton" value="1" />
                                 </div>
                                 <div class="pro-details-cart">
-                                    <button class="add-cart"> Add To
+                                    <button class="add-cart"
+                                    onclick="addToCart('SAMSUNG Galaxy Z Flip3', '₹46,999 ', '/assets/images/iphone/iphone-12-4.jpg')"> Add To
                                         Cart</button>
                                 </div>
                                 <div class="pro-details-compare-wishlist pro-details-wishlist ">
@@ -1358,6 +1366,71 @@
     <script src="../assets/js/plugins/mailchimp-ajax.js"></script>
 
     <!--Start of Tawk.to Script-->
+
+    <script type="text/javascript">
+        var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+        (function () {
+            var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+            s1.async = true;
+            s1.src = 'https://embed.tawk.to/65704fa1bfb79148e59a9f22/1hgvbe4ge';
+            s1.charset = 'UTF-8';
+            s1.setAttribute('crossorigin', '*');
+            s0.parentNode.insertBefore(s1, s0);
+        })();
+
+        function addToCart(itemName, itemPrice, itemImage) {
+            // Retrieve the cart from localStorage or initialize an empty cart
+            var cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+            // Add the item to the cart
+            cart.push({ name: itemName, price: itemPrice, image: itemImage });
+
+            // Save the updated cart back to localStorage
+            localStorage.setItem('cart', JSON.stringify(cart));
+
+            // Update the cart display
+            updateCartDisplay();
+
+            // Alert the user that the item has been added to the cart
+            alert('Item added to cart!');
+        }
+
+        function updateCartDisplay() {
+            // Retrieve the cart from localStorage
+            var cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+            // Get the cart element
+            var cartElement = document.getElementById('cart');
+
+            // Clear existing content
+            cartElement.innerHTML = '';
+
+            // Add new content for each item in the cart
+            if (cart.length === 0) {
+                cartElement.innerHTML = '<p>Your cart is empty</p>';
+            } else {
+                var cartList = document.createElement('ul');
+                cart.forEach(function (item) {
+                    var listItem = document.createElement('li');
+                    var image = document.createElement('img');
+                    image.src = item.image;
+                    listItem.appendChild(image);
+                    listItem.textContent += item.name + ' - $' + item.price;
+                    cartList.appendChild(listItem);
+                    listItem.innerHTML += `<button onclick=messege() id="buyButton">Buy Now</button>`
+                });
+                cartElement.appendChild(cartList);
+            }
+        }
+
+        function messege() {
+            alert('out of stock')
+        }
+
+        // Call updateCartDisplay when the page loads to initialize the cart display
+        window.onload = updateCartDisplay;   
+    </script>
+
    <!--Start of Tawk.to Script-->
 <script type="text/javascript">
 var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
@@ -1371,6 +1444,7 @@ s0.parentNode.insertBefore(s1,s0);
 })();
 </script>
 <!--End of Tawk.to Script-->
+
     <!--End of Tawk.to Script-->
 
     <!-- Minify Version -->
