@@ -1383,20 +1383,152 @@
                 cartElement.innerHTML = '<p>Your cart is empty</p>';
             } else {
                 var cartList = document.createElement('ul');
-                cart.forEach(function (item) {
+                cartList.classList.add('cart-list');
+                cart.forEach(function (item, index) {
                     var listItem = document.createElement('li');
+                    listItem.classList.add('cart-item');
                     var image = document.createElement('img');
                     image.src = item.image;
+                    image.alt = item.name;
+                    image.classList.add('product-image');
+
+                    // Append image to list item
                     listItem.appendChild(image);
-                    listItem.textContent += item.name + ' - $' + item.price;
+
+                    // Product details container
+                    var detailsContainer = document.createElement('div');
+                    detailsContainer.classList.add('product-details');
+
+                    // Append item name to details container
+                    var itemName = document.createElement('p');
+                    itemName.textContent = item.name;
+                    itemName.classList.add('product-name');
+                    detailsContainer.appendChild(itemName);
+
+                    // Append item price to details container
+                    var itemPrice = document.createElement('p');
+                    itemPrice.textContent = '$' + item.price;
+                    itemPrice.classList.add('product-price');
+                    detailsContainer.appendChild(itemPrice);
+
+                    // Append "Buy Now" button to details container
+                    var buyButton = document.createElement('button');
+                    buyButton.textContent = 'Buy Now';
+                    buyButton.classList.add('buy-button');
+                    buyButton.onclick = function () {
+                        // Add your buy now functionality here
+                        // For example, you can call a function to handle the buy now action
+                        message();
+                    };
+                    detailsContainer.appendChild(buyButton);
+
+                    // Append "Delete" button to details container
+                    var deleteButton = document.createElement('button');
+                    deleteButton.textContent = 'Delete';
+                    deleteButton.classList.add('delete-button');
+                    deleteButton.onclick = function () {
+                        // Remove item from cart
+                        cart.splice(index, 1);
+                        // Update the cart in localStorage
+                        localStorage.setItem('cart', JSON.stringify(cart));
+                        // Update the display
+                        updateCartDisplay();
+                    };
+                    detailsContainer.appendChild(deleteButton);
+
+                    // Append details container to list item
+                    listItem.appendChild(detailsContainer);
+
+                    // Append list item to cart list
                     cartList.appendChild(listItem);
-                    listItem.innerHTML += `<button onclick=messege() id="buyButton">Buy Now</button>`
                 });
                 cartElement.appendChild(cartList);
             }
         }
 
-        function messege() {
+
+        function message() {
+            alert('out of stock')
+        } function updateCartDisplay() {
+            // Retrieve the cart from localStorage
+            var cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+            // Get the cart element
+            var cartElement = document.getElementById('cart');
+
+            // Clear existing content
+            cartElement.innerHTML = '';
+
+            // Add new content for each item in the cart
+            if (cart.length === 0) {
+                cartElement.innerHTML = '<p>Your cart is empty</p>';
+            } else {
+                var cartList = document.createElement('ul');
+                cartList.classList.add('cart-list');
+                cart.forEach(function (item, index) {
+                    var listItem = document.createElement('li');
+                    listItem.classList.add('cart-item');
+                    var image = document.createElement('img');
+                    image.src = item.image;
+                    image.alt = item.name;
+                    image.classList.add('product-image');
+
+                    // Append image to list item
+                    listItem.appendChild(image);
+
+                    // Product details container
+                    var detailsContainer = document.createElement('div');
+                    detailsContainer.classList.add('product-details');
+
+                    // Append item name to details container
+                    var itemName = document.createElement('p');
+                    itemName.textContent = item.name;
+                    itemName.classList.add('product-name');
+                    detailsContainer.appendChild(itemName);
+
+                    // Append item price to details container
+                    var itemPrice = document.createElement('p');
+                    itemPrice.textContent = '$' + item.price;
+                    itemPrice.classList.add('product-price');
+                    detailsContainer.appendChild(itemPrice);
+
+                    // Append "Buy Now" button to details container
+                    var buyButton = document.createElement('button');
+                    buyButton.textContent = 'Buy Now';
+                    buyButton.classList.add('buy-button');
+                    buyButton.onclick = function () {
+                        // Add your buy now functionality here
+                        // For example, you can call a function to handle the buy now action
+                        message();
+                    };
+                    detailsContainer.appendChild(buyButton);
+
+                    // Append "Delete" button to details container
+                    var deleteButton = document.createElement('button');
+                    deleteButton.textContent = 'Delete';
+                    deleteButton.classList.add('delete-button');
+                    deleteButton.onclick = function () {
+                        // Remove item from cart
+                        cart.splice(index, 1);
+                        // Update the cart in localStorage
+                        localStorage.setItem('cart', JSON.stringify(cart));
+                        // Update the display
+                        updateCartDisplay();
+                    };
+                    detailsContainer.appendChild(deleteButton);
+
+                    // Append details container to list item
+                    listItem.appendChild(detailsContainer);
+
+                    // Append list item to cart list
+                    cartList.appendChild(listItem);
+                });
+                cartElement.appendChild(cartList);
+            }
+        }
+
+
+        function message() {
             alert('out of stock')
         }
 
